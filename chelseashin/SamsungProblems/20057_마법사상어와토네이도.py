@@ -1,5 +1,11 @@
 # from 9:20 to 11:30
 # 2h 10m
+# simulation 문제. 알고리즘 기술은 X.
+# 위치와 방향 담는 부분에서 생각보다 시간 많이 소요
+# 모래 날리는 부분은 귀찮아서 잔머리 굴릴 시간에 마음을 비우고 Masking 하니까 생각보다 금방 작성
+# 덕분에 머릿 속으로 생각한대로 빠르게 구현
+# 모래 날릴 때 기존의 모래의 양에 더해주지 않고 갱신하는 실수함, 이런 조건들 항상 조심하기!
+# 문제를 자세히 잘 읽고 풀자
 
 import sys
 sys.stdin = open("20057_input.txt")
@@ -16,13 +22,11 @@ r, c = N//2, N//2
 info = [(r, c, 0)]  # 토네이도 정보(현재 좌표, 방향) 담는 리스트
 dd = 0      # 방향
 dis = 1     # 거리
-before = A[r][c]    # 최초 모래의 양
 while True:
     for i in range(2):          # 같은 길이만큼이 2번씩 반복됨
         for j in range(dis):    # 길이만큼 이동
             nr = r + dr[dd]
             nc = c + dc[dd]
-            before += A[nr][nc]
             if j == dis-1:      # 이동의 끝은 다음 방향을 가짐
                 info.append((nr, nc, (dd+1) % 4))
             else:
@@ -33,7 +37,6 @@ while True:
     if dis == N:    # 마지막 0번 행은 따로 처리
         for k in range(N-2, -1, -1):
             info.append((0, k, dd))
-            before += A[0][k]
         break
 
 # 비율 리스트
