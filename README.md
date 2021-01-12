@@ -51,26 +51,28 @@
 ##### :ballot_box_with_check: 1주차 문제 리스트(21-01-05)
 
 * 삼성기출
-1. 마법사 상어와 파이어볼 - https://www.acmicpc.net/problem/20056
-2. 마법사 상어와 토네이도 - https://www.acmicpc.net/problem/20057
-3. 마법사 상어와 파이어스톰 - https://www.acmicpc.net/problem/20058
+   1. 마법사 상어와 파이어볼 - https://www.acmicpc.net/problem/20056
+   2. 마법사 상어와 토네이도 - https://www.acmicpc.net/problem/20057
+   3. 마법사 상어와 파이어스톰 - https://www.acmicpc.net/problem/20058
 
 * 프로그래머스 고득점 KIT
-* https://programmers.co.kr/learn/courses/30/parts/12077 - 해시 4문제
-* 완주하지 못한 선수 / 전화번호 목록 / 위장 / 베스트앨범
+   * https://programmers.co.kr/learn/courses/30/parts/12077 - 해시 4문제
+   * 완주하지 못한 선수 / 전화번호 목록 / 위장 / 베스트앨범
+
 
 ##### :ballot_box_with_check: 2주차 문제 리스트(21-01-12)
 
 * 삼성기출
-1. 청소년 상어 - https://www.acmicpc.net/problem/19236
-2. 어른 상어 - https://www.acmicpc.net/problem/19237
-3. 스타트 택시 - https://www.acmicpc.net/problem/19238
+   1. 청소년 상어 - https://www.acmicpc.net/problem/19236
+   2. 어른 상어 - https://www.acmicpc.net/problem/19237
+   3. 스타트 택시 - https://www.acmicpc.net/problem/19238
 
-##### :ballot_box_with_check: 2주차 문제 리스트(21-01-19)
+
+##### :ballot_box_with_check: 3주차 문제 리스트(21-01-19)
 
 * 삼성기출
-1. 원판 돌리기 - https://www.acmicpc.net/problem/17822
-2. 주사위 윷놀이 - https://www.acmicpc.net/problem/17825
-3. 모노미노도미노 2 - https://www.acmicpc.net/problem/20061
+   1. 원판 돌리기 - https://www.acmicpc.net/problem/17822
+   2. 주사위 윷놀이 - https://www.acmicpc.net/problem/17825
+   3. 모노미노도미노 2 - https://www.acmicpc.net/problem/20061
 * 백준 추천
-4. 체스판 여행 1 - https://www.acmicpc.net/problem/16959
+   4. 체스판 여행 1 - https://www.acmicpc.net/problem/16959
