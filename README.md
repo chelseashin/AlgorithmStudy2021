@@ -2,7 +2,7 @@
 
 
 
-20-12-31
+21-01-05 ~
 
 1. 스터디 날짜/시간 정하기 - 최대한 고정으로
    1. 주 1회
@@ -38,10 +38,7 @@
    5. 시행착오 겪은 부분, 새로 알게 된 것(알고리즘)들, 왜 오래 걸렸는지 등 작성 - 다른 사람들과 공유
 
 5. 스터디 참여 강제성 부여
-
-   1. 최초 시작할 때 2만원씩 내고,
-   2. 숙제 못 해올 때마다 1문제당 1천원씩 차감(양심껏)
-      1. 혼자 힘으로 풀기 힘든 경우, 타 블로그 보면서 충분히 혼자 공부, 방법 연구해서 클론코딩한 것은 인정
+   1. 혼자 힘으로 풀기 힘든 경우, 타 블로그 보면서 충분히 혼자 공부, 방법 연구해서 클론코딩한 것은 인정
 
 
 
@@ -54,7 +51,6 @@
 ##### :ballot_box_with_check: 1주차 문제 리스트(21-01-05)
 
 * 삼성기출
-
 1. 마법사 상어와 파이어볼 - https://www.acmicpc.net/problem/20056
 2. 마법사 상어와 토네이도 - https://www.acmicpc.net/problem/20057
 3. 마법사 상어와 파이어스톰 - https://www.acmicpc.net/problem/20058
@@ -62,3 +58,19 @@
 * 프로그래머스 고득점 KIT
 * https://programmers.co.kr/learn/courses/30/parts/12077 - 해시 4문제
 * 완주하지 못한 선수 / 전화번호 목록 / 위장 / 베스트앨범
+
+##### :ballot_box_with_check: 2주차 문제 리스트(21-01-12)
+
+* 삼성기출
+1. 청소년 상어 - https://www.acmicpc.net/problem/19236
+2. 어른 상어 - https://www.acmicpc.net/problem/19237
+3. 스타트 택시 - https://www.acmicpc.net/problem/19238
+
+##### :ballot_box_with_check: 2주차 문제 리스트(21-01-19)
+
+* 삼성기출
+1. 원판 돌리기 - https://www.acmicpc.net/problem/17822
+2. 주사위 윷놀이 - https://www.acmicpc.net/problem/17825
+3. 모노미노도미노 2 - https://www.acmicpc.net/problem/20061
+* 백준 추천
+4. 체스판 여행 1 - https://www.acmicpc.net/problem/16959
