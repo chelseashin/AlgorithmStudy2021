@@ -1,5 +1,8 @@
 # from 16:10 to 17:50
 # 1h 40m
+# simulation 문제. 알고리즘 기술은 X
+# 어떤 자료구조 사용하여 구현할지 미리 구상한 것이 도움됨
+# 덕분에 메모리, 시간 크게 단축
 
 import sys
 sys.stdin = open("20056_input.txt")
