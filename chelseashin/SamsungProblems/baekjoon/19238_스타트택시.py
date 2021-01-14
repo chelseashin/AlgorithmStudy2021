@@ -38,8 +38,9 @@ def bfs(sr, sc):
                 visited[nr][nc] = visited[r][c] + 1
                 Q.append((nr, nc))
             elif visited[nr][nc] == 999:
-                heapq.heappush(priority, (visited[r][c]+1, nr, nc))
+                heapq.heappush(priority, (visited[r][c]+1, nr, nc))      # 거리 > 행 > 열
     if priority:
+        # return heapq.heappop(priority)
         return priority[0]      # 먼저 태울 승객까지의 거리, 승객의 위치 리턴
     return False
 

@@ -3,7 +3,7 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.StringTokenizer;
 
-// 달팽이 만드는데 40~50분
+// 토네이도 만드는데 40~50분
 // 문제 풀이 2시간 6분
 
 public class Main {
