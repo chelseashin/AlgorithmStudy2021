@@ -21,6 +21,7 @@
     하지만 이 정보가 들어있는 move_table 배열을 사용하지 않고 tourlist 배열과 목적지 배열을 참조함.
     그래서 도착지점까지 가지 못하는 경우도 갈 수 있다고 처리되었음.
 """
+
 from collections import deque
 dx = [0,0,1,-1]
 dy = [1,-1,0,0]
