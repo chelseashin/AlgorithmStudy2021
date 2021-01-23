@@ -3,7 +3,7 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.StringTokenizer;
 
-// 2시간 22분 풀던중 블럭을 옮기는 부분에서 문제가 있어서 다시 품 
+// 2시간 22분 풀던중 블럭을 옮기는 부분에서 문제가 있어서 다시 품
 // moveblock함수가 계속 어그러짐
 // 큐 => 큐,어레이리스트 => 큐 => 커스텀 객체 
 // +1시간 43분 
@@ -124,16 +124,11 @@ public class Main {
 
 	static void removeFullBlock() {
 		// remove blue
-		for (int j = 9; j > 3; j--) {
+		for (int j = 4; j < 10; j++) {
 			if (isColFull(j)) {
-				for (int i = 0; i < 4; i++) {
-					board[i][j] = 0;
-				}
 				for (int j2 = j; j2 > 3; j2--) {
 					for (int i = 0; i < 4; i++) {
-						int tmp = board[i][j2];
 						board[i][j2] = board[i][j2-1];
-						board[i][j2-1] = tmp;
 					}
 				}
 				score++;
@@ -142,16 +137,11 @@ public class Main {
 		}
 
 		// remove green
-		for (int i = 9; i > 3; i--) {
+		for (int i = 4; i < 10; i++) {
 			if (isRowFull(i)) {
-				for (int j = 0; j < 4; j++) {
-					board[i][j] = 0;
-				}
 				for (int i2 = i; i2 > 3; i2--) {
 					for (int j = 0; j < 4; j++) {
-						int tmp = board[i2][j];
 						board[i2][j] = board[i2-1][j];
-						board[i2-1][j] = tmp;
 					}
 				}
 				score++;
