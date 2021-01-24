@@ -11,7 +11,7 @@ import java.util.StringTokenizer;
 public class Main {
 	public static void main(String[] args) throws Exception {
 		init();
-		calc();
+		solve();
 		System.out.println(fuel);
 		br.close();
 	}
@@ -52,7 +52,7 @@ public class Main {
 		isGoing = true;
 	}
 
-	static void calc() throws IOException {
+	static void solve() throws IOException {
 		for (int i = 0; i < M; i++) {
 			if(!isGoing) return;
 			measureDist();
