@@ -1,3 +1,7 @@
+# 약 2시간..? 소요
+# 사용 알고리즘 : dfs
+# 변수명 짓는 데 일관성 있게,, 자꾸 헷갈림
+
 import sys
 sys.stdin = open("1767_input.txt")
 
@@ -32,15 +36,15 @@ def dfs(depth, connectedCores, connectedlength):
             minLength = min(minLength, connectedlength)
         return minLength
 
-    arr = [x[:] for x in A]
-    sr, sc = coreLst[depth]
+    arr = [x[:] for x in A]         # 이전 상태 저장
+    sr, sc = coreLst[depth]         # 연결 시도할 코어 위치
     for d in range(4):
-        temp = connect(sr, sc, d)    # 코어 위치, 방향 넘겨주면
-        if temp:    # 연결 가능하면
+        temp = connect(sr, sc, d)   # 코어 위치, 방향 넘겨주면 가장자리까지의 거리 리턴
+        if temp:                    # 연결 가능하면
             dfs(depth+1, connectedCores+1, connectedlength+temp)
-        A = [x[:] for x in arr]
-    # 연결 실패하면
-    dfs(depth+1, connectedCores, connectedlength)
+        A = [x[:] for x in arr]     # 연결한 상태니까 복원
+
+    dfs(depth+1, connectedCores, connectedlength)   # 연결 실패하면
 
 # main
 T = int(input())
