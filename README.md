@@ -13,7 +13,7 @@
 
    3. 주 2회 - 2회 모두 오프라인? (코로나 좀 나아지면..)
 
-   4. 일시 : 화요일 저녁
+   4. 일시 : 요일 저녁
 
    5. 장소: 충대 정문 쪽 스터디 카페 - 스터디플러스 충남대점
 
@@ -77,10 +77,19 @@
    3. 모노미노도미노 2 - https://www.acmicpc.net/problem/20061
 * 백준 추천 : 체스판 여행 1 - https://www.acmicpc.net/problem/16959
 
-:ballot_box_with_check: 4주차 문제 리스트(21-01-19)
+##### :ballot_box_with_check: 4주차 문제 리스트(21-01-27)
 
 * 삼성기출
   1. 연구소 3 - https://www.acmicpc.net/problem/17142
   2. 게리맨더링 2 - https://www.acmicpc.net/problem/17779
   3. 새로운 게임 2 - https://www.acmicpc.net/problem/17837
 * 백준 추천 : 체스판 여행 1 - https://www.acmicpc.net/problem/16959
+
+
+##### :ballot_box_with_check: 5주차 문제 리스트(21-02-03)
+
+* 삼성기출
+  1. 미세먼지 안녕! - https://www.acmicpc.net/problem/17144
+  2. 낚시왕 - https://www.acmicpc.net/problem/17143
+  3. 이차원 배열과 연산 - https://www.acmicpc.net/problem/17140
+* 추가 DP 문제 : 내리막 길 - https://www.acmicpc.net/problem/1520
