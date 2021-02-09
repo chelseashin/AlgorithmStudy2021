@@ -99,4 +99,4 @@
   3. 아기 상어 - https://www.acmicpc.net/problem/16236
   
 * CS 전공(면접 준비)
-  * 자료구조 - Array / Linked List / Queue / Stack / Hash Table / Tree / Binary Search Tree / Heap
+  * 자료구조 - Array / Linked List / Queue / Stack / Hash Table / Tree / Binary Search Tree / Heap / Graph
