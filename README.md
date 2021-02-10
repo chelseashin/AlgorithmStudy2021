@@ -5,15 +5,11 @@
 21-01-05 ~
 
 1. 스터디 날짜/시간 정하기 - 최대한 고정으로
-   1. 주 1회
-
-   2. 주 2회 - 1회는 온라인 / 1회는 오프라인?
+   1. 주 1회(코딩 테스트 공부 2시간 + CS 전공 공부 2시간)
 
       #### - 첫 스터디 : 21-01-05 
 
-   3. 주 2회 - 2회 모두 오프라인? (코로나 좀 나아지면..)
-
-   4. 일시 : 요일 저녁
+   4. 일시 : 매주 수요일 
 
    5. 장소: 충대 정문 쪽 스터디 카페 - 스터디플러스 충남대점
 
@@ -93,3 +89,14 @@
   2. 낚시왕 - https://www.acmicpc.net/problem/17143
   3. 이차원 배열과 연산 - https://www.acmicpc.net/problem/17140
 * 추가 DP 문제 : 내리막 길 - https://www.acmicpc.net/problem/1520
+
+
+##### :ballot_box_with_check: 6주차 문제 리스트(21-02-10)
+
+* 삼성기출
+  1. 인구 이동 - https://www.acmicpc.net/problem/16234
+  2. 나무 재테크 - https://www.acmicpc.net/problem/16235
+  3. 아기 상어 - https://www.acmicpc.net/problem/16236
+  
+* CS 전공(면접 준비)
+  * 자료구조 - Array / Linked List / Queue / Stack / Hash Table / Tree / Binary Search Tree / Heap / Graph
