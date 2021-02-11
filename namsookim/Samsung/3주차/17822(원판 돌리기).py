@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 # https://www.acmicpc.net/problem/17822
 # 10:16
 # 11:57 끝
