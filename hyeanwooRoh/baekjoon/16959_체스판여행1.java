@@ -9,7 +9,6 @@ import java.util.StringTokenizer;
 //1시간 20분동안 DFS로 풀다가 포기하고 답봄
 //BFS로 풀면 된다는 것만 보고 다시 도전
 //하다가 안돼서 포기하고 답보고 베낌
-
 // 방문체크를 하는 배열을 만들어주는 것이 핵심이라고 생각
 
 public class Main {

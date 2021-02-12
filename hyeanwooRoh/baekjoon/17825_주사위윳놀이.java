@@ -8,7 +8,7 @@ public class Main {
 
 	public static void main(String[] args) throws Exception {
 		init();
-		calc();
+		solve();
 		out();
 	}
 	
@@ -62,7 +62,7 @@ public class Main {
 		{0,32,32,32,32,32}
 	};
 
-	private static void calc() {
+	private static void solve() {
 		for(int bit=0; bit < (1 << 20); bit++) {
 			int score = 0;
 			int[] horse = new int[4];
