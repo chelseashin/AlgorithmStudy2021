@@ -40,12 +40,9 @@ def comb(depth):
         downStairs(A, B)
         return
     for i in range(2):
-        if not visited[depth]:
-            selection[depth] = i
-            visited[depth] = 1
-            comb(depth+1)
-            visited[depth] = 0
-            selection[depth] = 0
+        selection[depth] = i
+        comb(depth+1)
+        selection[depth] = 0
 
 def downStairs(A, B):
     global MIN
@@ -107,7 +104,6 @@ for tc in range(T):
     # 2개의 계단 내려가는 시간
     stair1, stair2 = A[stairs[0][0]][stairs[0][1]], A[stairs[1][0]][stairs[1][1]]
     MIN = float('inf')
-    visited = [0] * personCnt
     selection = [0] * personCnt
     comb(0)
     print("#{} {}".format(tc+1, MIN))
