@@ -2,6 +2,8 @@
 # 시간 의미 X
 # DP는 아무리 봐도 진짜 이해가 안 된다..ㅎ 공부하자
 # LIS(Longest Increasing Subsequence) : 최장 증가 부분수열
+# 나무위키 참고
+# https://namu.wiki/w/%EC%B5%9C%EC%9E%A5%20%EC%A6%9D%EA%B0%80%20%EB%B6%80%EB%B6%84%20%EC%88%98%EC%97%B4#s-3.2
 
 import sys
 input = sys.stdin.readline
