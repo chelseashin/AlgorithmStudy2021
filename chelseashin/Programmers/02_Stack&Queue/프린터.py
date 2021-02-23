@@ -1,6 +1,3 @@
-priorities = [1, 1, 9, 1, 1, 1]
-location = 0
-
 from collections import deque
 
 def solution(priorities, location):
@@ -16,4 +13,5 @@ def solution(priorities, location):
                 break
     return answer
 
-print(solution(priorities, location))
+print(solution([2, 1, 3, 2], 2))
+print(solution([1, 1, 9, 1, 1, 1], 0))
