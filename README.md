@@ -57,12 +57,16 @@
    * 완주하지 못한 선수 / 전화번호 목록 / 위장 / 베스트앨범
 
 
+
+
 ##### :ballot_box_with_check: 2주차 문제 리스트(21-01-12)
 
 * 삼성기출
    1. 청소년 상어 - https://www.acmicpc.net/problem/19236
    2. 어른 상어 - https://www.acmicpc.net/problem/19237
    3. 스타트 택시 - https://www.acmicpc.net/problem/19238
+
+
 
 
 ##### :ballot_box_with_check: 3주차 문제 리스트(21-01-19)
@@ -73,6 +77,8 @@
    3. 모노미노도미노 2 - https://www.acmicpc.net/problem/20061
 * 백준 추천 : 체스판 여행 1 - https://www.acmicpc.net/problem/16959
 
+
+
 ##### :ballot_box_with_check: 4주차 문제 리스트(21-01-27)
 
 * 삼성기출
@@ -80,6 +86,8 @@
   2. 게리맨더링 2 - https://www.acmicpc.net/problem/17779
   3. 새로운 게임 2 - https://www.acmicpc.net/problem/17837
 * 백준 추천 : 체스판 여행 1 - https://www.acmicpc.net/problem/16959
+
+
 
 
 ##### :ballot_box_with_check: 5주차 문제 리스트(21-02-03)
@@ -91,6 +99,8 @@
 * 추가 DP 문제 : 내리막 길 - https://www.acmicpc.net/problem/1520
 
 
+
+
 ##### :ballot_box_with_check: 6주차 문제 리스트(21-02-10)
 
 * 삼성기출
@@ -100,8 +110,7 @@
   
 * CS 전공(면접 준비)
   * 자료구조 - Array / Linked List / Queue / Stack / Hash Table / Tree / Binary Search Tree / Heap / Graph
-  
-  
+
 
 ##### :ballot_box_with_check: 7주차 문제 리스트(21-02-17)
 
@@ -111,4 +120,12 @@
 * 추가 DP 문제 : 줄세우기 - https://www.acmicpc.net/problem/2631
 
 * CS 전공(면접 준비)
-  * 자료구조 마무리 - Graph + 관련 알고리즘
+  * 자료구조 마무리 - Graph + 관련 알고리즘 
+
+
+
+##### :ballot_box_with_check: 8주차 문제 리스트(21-02-25)
+
+- Programmers 코딩테스트 고득점 Kit
+  1. `스택/큐` 4문제 - https://programmers.co.kr/learn/courses/30/parts/12081
+  2. `완전탐색` 4문제 - https://programmers.co.kr/learn/courses/30/parts/12230
