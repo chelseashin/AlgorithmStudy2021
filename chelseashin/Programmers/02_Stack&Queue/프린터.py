@@ -5,7 +5,7 @@ def solution(priorities, location):
     Q = deque([(value, idx) for idx, value in enumerate(priorities)])
     while Q:
         value, idx = Q.popleft()
-        if Q and value < max(Q)[0]:     # 남은 값들 중 가장 큰 값보다 작다면 
+        if Q and value < max(Q)[0]:     # 남은 값들 중 가장 큰 값보다 작다면
             Q.append((value, idx))
         else:                           # 가장 큰 값이면 그대로 프린트
             answer += 1
