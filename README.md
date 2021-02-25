@@ -128,4 +128,7 @@
 
 - Programmers 코딩테스트 고득점 Kit
   1. `스택/큐` 4문제 - https://programmers.co.kr/learn/courses/30/parts/12081
-  2. `완전탐색` 4문제 - https://programmers.co.kr/learn/courses/30/parts/12230
+  2. `완전탐색` 3문제 - https://programmers.co.kr/learn/courses/30/parts/12230
+
+* CS 전공(면접 준비)
+  * 데이터베이스
