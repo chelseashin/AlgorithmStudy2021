@@ -115,7 +115,7 @@
 ##### :ballot_box_with_check: 7주차 문제 리스트(21-02-17)
 
 * Programmers 코딩테스트 고득점 Kit
-  1. `힙` 3문제 - https://programmers.co.kr/learn/courses/30/parts/12117
+  1. `힙(Heap)` 3문제 - https://programmers.co.kr/learn/courses/30/parts/12117
   2. `정렬` 3문제 - https://programmers.co.kr/learn/courses/30/parts/12198
 * 추가 DP 문제 : 줄세우기 - https://www.acmicpc.net/problem/2631
 
@@ -132,3 +132,13 @@
 
 * CS 전공(면접 준비)
   * 데이터베이스
+
+
+##### :ballot_box_with_check: 9주차 문제 리스트(21-03-03)
+
+- Programmers 코딩테스트 고득점 Kit
+  1. `탐욕법(Greedy)` 4문제 - https://programmers.co.kr/learn/courses/30/parts/12244
+  2. `깊이/너비 우선 탐색(DFS/BFS)` 4문제 - https://programmers.co.kr/learn/courses/30/parts/12421
+
+* CS 전공(면접 준비)
+  * 운영체제 - 스케쥴러까지
