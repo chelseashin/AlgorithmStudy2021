@@ -8,7 +8,7 @@
 #         MAX = max(MAX, int(''.join(comb)))
 #     return str(MAX)
 
-# stack 으로 Greedy한 풀이
+# stack 으로 Greedy한 풀이.. 어려워서 다른 사람 풀이를 참고했다.
 # Greedy는 순간에만 가장 큰 이득을 취하기 때문에
 # 늘 최적해를 보장하는 것은 아니다!
 
