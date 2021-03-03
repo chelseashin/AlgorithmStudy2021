@@ -142,3 +142,16 @@
 
 * CS 전공(면접 준비)
   * 운영체제 - 스케쥴러까지
+
+##### :ballot_box_with_check: 10주차 문제 리스트(21-03-10)
+
+- 백준 알고리즘 문제
+   1. 1, 2, 3 더하기 - https://www.acmicpc.net/problem/9095
+   2. 좋은수열 - https://www.acmicpc.net/problem/2661
+   3. 가로수 - https://www.acmicpc.net/problem/2485
+   4. 골드바흐의 추측 - https://www.acmicpc.net/problem/6588
+   5. 벽 부수고 이동하기 - https://www.acmicpc.net/problem/2206
+   6. 영역 구하기 - https://www.acmicpc.net/problem/2583
+
+* CS 전공(면접 준비)
+  * 운영체제 마무리 - 메모리 & 캐시 / 페이징 교체 알고리즘 / 프로세스 동기화(뮤텍스와 세마포어) 등 
