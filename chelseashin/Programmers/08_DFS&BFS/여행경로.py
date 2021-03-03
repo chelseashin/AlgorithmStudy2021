@@ -53,7 +53,8 @@ def solution(tickets):
             answer.append(stack.pop())
         else:
             stack.append(path_info[start].pop())
+        print(stack, answer)
     answer.reverse()
     return answer
 print(solution([["ICN", "JFK"], ["HND", "IAD"], ["JFK", "HND"]]))
-print(solution([["ICN", "SFO"], ["ICN", "ATL"], ["SFO", "ATL"], ["ATL", "ICN"], ["ATL", "SFO"]]))
+# print(solution([["ICN", "SFO"], ["ICN", "ATL"], ["SFO", "ATL"], ["ATL", "ICN"], ["ATL", "SFO"]]))

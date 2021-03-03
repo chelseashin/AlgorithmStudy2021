@@ -1,4 +1,4 @@
-# 마지막.. 답 보고 풀기 가장 깔끔한 풀이
+# 마지막.. 답 보고 아이디어 얻어서 풀기 가장 깔끔한 풀이
 # 오름차순 정렬 후 가장 작은 값과 큰 값 더해
 # limit 넘으면 작은 값만 큐에 다시 담고 큰 값은 그대로 pop
 # limit 안 넘으면 둘다 pop
@@ -7,6 +7,7 @@ from collections import deque
 def solution(people, limit):
     result = 0
     Q = deque(sorted(people))
+    print(Q)
     while Q:
         left = Q.popleft()
         if not Q:
@@ -18,7 +19,7 @@ def solution(people, limit):
     return result
 
 # 첫 번째 시도
-# 고작 30%만 톧과..
+# 고작 30%만 통과..
 # from collections import deque
 #
 # def solution(people, limit):

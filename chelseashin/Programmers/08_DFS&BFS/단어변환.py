@@ -10,7 +10,7 @@ def isDifferent(x, y, L):
         if y[i] != x[i]:
             temp += 1
             if temp > 1:    # 2개 이상 다르면 그냥 2 리턴
-                return 2
+                return temp
     return 1
 
 def dfs(begin, target, words, check, N, L):

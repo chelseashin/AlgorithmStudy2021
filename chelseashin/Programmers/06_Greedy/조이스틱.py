@@ -9,13 +9,13 @@ def solution(name):
         info[idx] = 0
         if sum(info) == 0:
             return answer
-        # print(info)
         # 좌우 이동방향 정하기- 더 가까운 쪽으로 선택
         left, right = 1, 1
         while info[idx-left] == 0:
             left += 1
         while info[idx+right] == 0:
             right += 1
+        # print(info, "현 위치", idx, "가까운 자리 찾기 ==>", left, right)
         # 위치 인덱스 조정
         if left < right:
             answer += left
@@ -27,6 +27,7 @@ def solution(name):
 print(solution("JEROEN"))
 # print(solution("JAN"))
 # print(solution("JAZZ"))
+print(solution("BBBBAAAABA"))
 
 
 # def solution(name):

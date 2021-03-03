@@ -1,18 +1,17 @@
 # 나의 풀이(성공)
-def dfs(depth, numbers, target, N, temp):
+def dfs(depth, numbers, target, temp):
     global answer
-    if depth == N:
+    if depth == len(numbers):
         if temp == target:
             answer += 1
         return
-    for i in (-1, 1):
-        dfs(depth+1, numbers, target, N, temp + i*numbers[depth])
+    dfs(depth+1, numbers, target, temp + numbers[depth])
+    dfs(depth+1, numbers, target, temp - numbers[depth])
 
 def solution(numbers, target):
     global answer
     answer = 0
-    N = len(numbers)
-    dfs(0, numbers, target, N, 0)
+    dfs(0, numbers, target, 0)
     return answer
 
 print(solution([1, 1, 1, 1, 1], 3))
