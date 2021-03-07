@@ -19,8 +19,8 @@ def solution(numbers):
 #     nums = [str(n) for n in numbers]
 #     longest = max([len(n) for n in nums])
 #     nums.sort(key=lambda x: x*(longest//len(x)+1), reverse=True)
-#     # print(nums, longest)
-#     return str(int(''.join(nums)))
+#     print(nums, longest)
+    # return str(int(''.join(nums)))
 
 print(solution([6, 10, 2]))
 print(solution([3, 30, 34, 5, 9]))

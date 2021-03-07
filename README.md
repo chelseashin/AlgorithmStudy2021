@@ -57,12 +57,16 @@
    * 완주하지 못한 선수 / 전화번호 목록 / 위장 / 베스트앨범
 
 
+
+
 ##### :ballot_box_with_check: 2주차 문제 리스트(21-01-12)
 
 * 삼성기출
    1. 청소년 상어 - https://www.acmicpc.net/problem/19236
    2. 어른 상어 - https://www.acmicpc.net/problem/19237
    3. 스타트 택시 - https://www.acmicpc.net/problem/19238
+
+
 
 
 ##### :ballot_box_with_check: 3주차 문제 리스트(21-01-19)
@@ -73,6 +77,8 @@
    3. 모노미노도미노 2 - https://www.acmicpc.net/problem/20061
 * 백준 추천 : 체스판 여행 1 - https://www.acmicpc.net/problem/16959
 
+
+
 ##### :ballot_box_with_check: 4주차 문제 리스트(21-01-27)
 
 * 삼성기출
@@ -80,6 +86,8 @@
   2. 게리맨더링 2 - https://www.acmicpc.net/problem/17779
   3. 새로운 게임 2 - https://www.acmicpc.net/problem/17837
 * 백준 추천 : 체스판 여행 1 - https://www.acmicpc.net/problem/16959
+
+
 
 
 ##### :ballot_box_with_check: 5주차 문제 리스트(21-02-03)
@@ -91,6 +99,8 @@
 * 추가 DP 문제 : 내리막 길 - https://www.acmicpc.net/problem/1520
 
 
+
+
 ##### :ballot_box_with_check: 6주차 문제 리스트(21-02-10)
 
 * 삼성기출
@@ -100,15 +110,48 @@
   
 * CS 전공(면접 준비)
   * 자료구조 - Array / Linked List / Queue / Stack / Hash Table / Tree / Binary Search Tree / Heap / Graph
-  
-  
+
 
 ##### :ballot_box_with_check: 7주차 문제 리스트(21-02-17)
 
 * Programmers 코딩테스트 고득점 Kit
-  1. `힙` 3문제 - https://programmers.co.kr/learn/courses/30/parts/12117
+  1. `힙(Heap)` 3문제 - https://programmers.co.kr/learn/courses/30/parts/12117
   2. `정렬` 3문제 - https://programmers.co.kr/learn/courses/30/parts/12198
 * 추가 DP 문제 : 줄세우기 - https://www.acmicpc.net/problem/2631
 
 * CS 전공(면접 준비)
-  * 자료구조 마무리 - Graph + 관련 알고리즘
+  * 자료구조 마무리 - Graph + 관련 알고리즘 
+
+
+
+##### :ballot_box_with_check: 8주차 문제 리스트(21-02-25)
+
+- Programmers 코딩테스트 고득점 Kit
+  1. `스택/큐` 4문제 - https://programmers.co.kr/learn/courses/30/parts/12081
+  2. `완전탐색` 3문제 - https://programmers.co.kr/learn/courses/30/parts/12230
+
+* CS 전공(면접 준비)
+  * 데이터베이스
+
+
+##### :ballot_box_with_check: 9주차 문제 리스트(21-03-03)
+
+- Programmers 코딩테스트 고득점 Kit
+  1. `탐욕법(Greedy)` 4문제 - https://programmers.co.kr/learn/courses/30/parts/12244
+  2. `깊이/너비 우선 탐색(DFS/BFS)` 4문제 - https://programmers.co.kr/learn/courses/30/parts/12421
+
+* CS 전공(면접 준비)
+  * 운영체제 - 스케쥴러까지
+
+##### :ballot_box_with_check: 10주차 문제 리스트(21-03-10)
+
+- 백준 알고리즘 문제
+   1. 1, 2, 3 더하기 - https://www.acmicpc.net/problem/9095
+   2. 좋은수열 - https://www.acmicpc.net/problem/2661
+   3. 가로수 - https://www.acmicpc.net/problem/2485
+   4. 골드바흐의 추측 - https://www.acmicpc.net/problem/6588
+   5. 벽 부수고 이동하기 - https://www.acmicpc.net/problem/2206
+   6. 영역 구하기 - https://www.acmicpc.net/problem/2583
+
+* CS 전공(면접 준비)
+  * 운영체제 마무리 - 메모리 & 캐시 / 페이징 교체 알고리즘 / 프로세스 동기화(뮤텍스와 세마포어) 등 
