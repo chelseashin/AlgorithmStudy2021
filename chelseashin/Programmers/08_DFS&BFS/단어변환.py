@@ -13,17 +13,17 @@ def isDifferent(x, y, L):
                 return temp
     return 1
 
-def dfs(begin, target, words, check, N, L):
+def dfs(begin, target, words, check):
     global answer
     stack = [begin]
     while stack:
         x = stack.pop()
         if x == target:     # 타겟 단어 만나면 depth 리턴
             return answer
-        for next in range(N):
+        for next in range(len(words)):
             # 조건 1. 한 개의 알파벳만 다른 경우
             y = words[next]
-            if isDifferent(x, y, L) == 1:
+            if isDifferent(x, y, len(begin)) == 1:
                 if check[next]:
                     continue
                 check[next] = 1
@@ -36,10 +36,8 @@ def solution(begin, target, words):
     if target not in words:
         return 0
     answer = 0
-    N = len(words)
-    L = len(begin)
-    check = [0] * N
-    dfs(begin, target, words, check, N, L)
+    check = [0] * len(words)
+    dfs(begin, target, words, check)
     return answer
 
 print(solution("hit", "cog", ["hot", "dot", "dog", "lot", "log", "cog"]))
