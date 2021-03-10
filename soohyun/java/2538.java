@@ -4,6 +4,7 @@ import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.io.IOException;
 import java.util.Iterator;
+import java.util.Collections;
 class Paper{
     int xmin;
     int ymin;
@@ -51,7 +52,6 @@ class Main{
             YMin = Integer.parseInt(rawData[0]);
             XMax = Integer.parseInt(rawData[3]) - 1;
             YMax = Integer.parseInt(rawData[2]) - 1;
-            //System.out.println("input:"+XMin+ " "+YMin+" "+XMax+" "+YMax);
             squares.add(new Paper(XMin, YMin, XMax, YMax));
         }
         //make map
@@ -65,13 +65,6 @@ class Main{
                 }
             }
         }
-        //debug
-        /*for(int i = 0; i < M; i++){
-            for(int j = 0; j < N; j++){
-                System.out.print(paper[i][j]);
-            }
-            System.out.println();
-        }*/
 
         //bfs
         int[] dx = {0, 0, -1 ,1};
@@ -87,7 +80,6 @@ class Main{
                 int size = 0;
                 while(queue.size() > 0){
                     Loc curLoc = queue.removeFirst();
-                    //System.out.println(curLoc.x+" "+curLoc.y);
                     size += 1;
                     for(int k = 0; k < 4; k++){
                         int x = curLoc.x + dx[k];
@@ -97,15 +89,14 @@ class Main{
                         else{
                             visit[x][y] = 1;
                             queue.add(new Loc(x, y));
-                            //System.out.println("add:"+x+" "+ y);
                             }
                     }
                 }
-                //System.out.println("size:"+ size);
                 areas.add(size);
             }
         }
         System.out.println(areas.size());
+        Collections.sort(areas);
         Iterator it = areas.iterator();
         System.out.print(it.next());
         while(it.hasNext()){
