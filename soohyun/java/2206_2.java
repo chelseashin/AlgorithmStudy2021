@@ -55,6 +55,7 @@ class Main{
                 //System.out.println("[mid] "+pathCount);
                 if(location.pathCount < result){
                     result = location.pathCount;
+                    break;
                 }
             }
             else{
@@ -67,14 +68,12 @@ class Main{
                         continue;
                     if(maze[newX][newY] == 1){
                         if(location.breakCount == 1){
-                            if(visited[newX][newY] == -1){
                                 //visited[newX][newY] = 0;
                                 stack.add(new Location(newX, 
                                                        newY, 
                                                        location.breakCount-1,
                                                        location.pathCount+1));
                                 //System.out.println(newX+" "+newY+" "+pathCount);
-                            }
                         }
                     }
                     else{
