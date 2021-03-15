@@ -7,9 +7,9 @@
 import sys
 input = sys.stdin.readline
 
-a = [0, 0] + [1]*(1000001-1)
+a = [0, 0] + [1] * 1000000
 for i in range(2, 1001):
-    for j in range(2*i, 1000001+1, i):
+    for j in range(2*i, 1000001, i):
         a[j] = 0
 
 def solve(n):
@@ -17,8 +17,6 @@ def solve(n):
         if a[num] and a[n-num]:
             print(n, "=", num, "+", n-num)
             return
-    print("Goldbach's conjecture is wrong.")
-    return
 
 while True:
     n = int(input())
