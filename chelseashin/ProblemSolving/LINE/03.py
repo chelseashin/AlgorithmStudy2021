@@ -1,16 +1,20 @@
 # 21:10 start
 # 22:02 finish
-#
+
 def dfs(depth, N, temp):
     global min_depth, min_value
+    if depth > min_depth:       # 가지치기
+        return
+
     if len(temp) == 1:
+        # print(depth, temp)
         if min_depth > depth:   # 최소 depth 갱신
             min_depth = depth
             min_value = int(temp)
         return
 
     for i in range(1, N):
-        if temp[:i][0] == "0" or temp[i:][0] == "0":    # 맨 앞자리수가 0이면 넘기기
+        if len(temp[i:]) > 1 and temp[i:][0] == "0":    # 맨 앞자리수가 0이면 넘기기
             continue
         left = int(temp[:i])
         right = int(temp[i:])
@@ -31,3 +35,5 @@ def solution(n):
 print(solution(73425))
 print(solution(10007))
 print(solution(9))
+print(solution(100000))
+print(solution(1123456789))

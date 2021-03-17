@@ -9,12 +9,14 @@ def solution(boxes):
                 info[x] = 1
             else:
                 info[x] += 1
+    # print(info)
     temp = 0
     for value in info.values():
-        if not value % 2:
+        if value % 2:
             temp += 1
-    return len(boxes) - temp
+    return temp // 2
 
 print(solution([[1, 2], [2, 1], [3, 3], [4, 5], [5, 6], [7, 8]]))
 print(solution([[1, 2], [3, 4], [5, 6]]))
 print(solution([[1, 2], [2, 3], [3, 1]]))
+print(solution([[1, 2], [5, 5], [5, 6]]))

@@ -32,8 +32,8 @@ def solution(companies, applicants):
                 else:
                     break
     # print("지원자 정보")
-    print(appChoices)
-    print(appInfo)
+    # print(appChoices)
+    # print(appInfo)
     
     # 첫 라운드
     curMatching = {comp: [] for comp in compChoices.keys()}

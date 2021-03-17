@@ -6,7 +6,7 @@ def solution(maze):
     # 상 우 하 좌
     dr = (-1, 0, 1, 0)
     dc = (0, 1, 0, -1)
-    cnt = 0
+
     N = len(maze)
     A = [[1] * (N + 2)]
     for row in maze:
@@ -14,6 +14,7 @@ def solution(maze):
     A.append([1] * (N + 2))
     # for a in A:
     #     print(a)
+    cnt = 0
     r, c, d = 1, 1, 1
     while True:
         if (r, c) == (N, N):     # 탈출

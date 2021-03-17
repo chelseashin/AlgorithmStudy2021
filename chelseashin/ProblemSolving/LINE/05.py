@@ -7,7 +7,7 @@ class User():
         self.maxSum = 0
         
     def add(self, card):
-        if card > 10:   # J, Q, K 처리 
+        if card > 10:   # J, Q, K 처리
             card = 10
         if card == 1:   # A 처리, 11로 계산했을 때의 값을 따로 저장
             self.maxSum += 10
@@ -107,6 +107,7 @@ def solution(cards):
             score += play(cards)
         except:     # 발생하면 점수 출력하고 종료
             return score
+
 print(solution([12, 7, 11, 6, 2, 12]))
 print(solution([1, 4, 10, 6, 9, 1, 8, 13]))
 print(solution([10, 13, 10, 1, 2, 3, 4, 5, 6, 2]))
