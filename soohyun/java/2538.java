@@ -3,17 +3,18 @@ import java.util.LinkedList;
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.io.IOException;
-
+import java.util.Iterator;
+import java.util.Collections;
 class Paper{
-    int xin;
-    int yin;
-    int xax;
-    int yax;
-    public Paper(int xin, int yin, int xax, int yax){
-        this.xin = xin;
-        this.yin = yin;
-        this.xax = xax;
-        this.yax = yax;
+    int xmin;
+    int ymin;
+    int xmax;
+    int ymax;
+    public Paper(int xmin, int ymin, int xmax, int ymax){
+        this.xmin = xmin;
+        this.ymin = ymin;
+        this.xmax = xmax;
+        this.ymax = ymax;
     }
 }
 
@@ -29,44 +30,78 @@ class Loc{
 
 
 class Main{
-    public static void main(String[] args){
+    public static void main(String[] args) throws IOException{
         //declare
         BufferedReader buf = new BufferedReader(new InputStreamReader(System.in));
-        HashSet<Loc> blankAxis = new HashSet<>();
+        int[][] paper;
+        int[][] visit;
         LinkedList<Loc> queue = new LinkedList<>();
-        LinkedList<Loc> areas = new LinkedList<>();
-        LinkedList<Paper> papers = new LinkedList<>();
+        LinkedList<Integer> areas = new LinkedList<>();
+        LinkedList<Paper> squares = new LinkedList<>();
         int XMin = 0;int YMin = 0;int XMax = 0;int YMax = 0;
         //input & data processing
-        String[] rawData = buf.readline().split()
+        String[] rawData = buf.readLine().split(" ");
         int M = Integer.parseInt(rawData[0]);
         int N = Integer.parseInt(rawData[1]);
         int K = Integer.parseInt(rawData[2]);
+        paper = new int[M][N];
+        visit = new int[M][N];
         for(int i = 0; i < K; i++){
-            rawData = buf.readline.split();
+            rawData = buf.readLine().split(" ");
             XMin = Integer.parseInt(rawData[1]);
             YMin = Integer.parseInt(rawData[0]);
             XMax = Integer.parseInt(rawData[3]) - 1;
             YMax = Integer.parseInt(rawData[2]) - 1;
-            paper.add(new Paper(XMin, YMin, XMax, YMax));
+            squares.add(new Paper(XMin, YMin, XMax, YMax));
         }
-
-        for(int i = 0; i < N-1; i++){
-            for(int j = 0; j < M-1; j++){
-                for(paper: papers){
-                    if((i < paper.xin || j > paper.yax) ||
-                       (i > paper.xax || j < paper.xin)){
-                            blankAxis.add(new Loc(x, y));
-                       }
+        //make map
+        for(int i = 0; i < M; i++){
+            for(int j = 0; j < N; j++){
+                for(Paper square: squares){
+                    if(i >= square.xmin && j <= square.ymax &&
+                       i <= square.xmax && j >= square.ymin){
+                            paper[i][j] = -1;
+                    }
                 }
             }
         }
 
         //bfs
-        while(blankAxis.size() > 0){
-            blankAxis.remove
-            while(queue.size() > 0){
+        int[] dx = {0, 0, -1 ,1};
+        int[] dy = {-1, 1, 0, 0};
+        for(int i = 0; i < M; i++){
+            for(int j = 0; j < N; j++){
+                //paper의 그린부분이거나  방문한경우
+                if(paper[i][j] == -1 || visit[i][j] == 1){
+                    continue;
+                }
+                queue.add(new Loc(i, j));
+                visit[i][j] = 1;
+                int size = 0;
+                while(queue.size() > 0){
+                    Loc curLoc = queue.removeFirst();
+                    size += 1;
+                    for(int k = 0; k < 4; k++){
+                        int x = curLoc.x + dx[k];
+                        int y = curLoc.y + dy[k];
+                        if(x < 0 || y < 0 || x >= M || y >= N) continue;
+                        else if(paper[x][y] == -1 || visit[x][y] == 1) continue;
+                        else{
+                            visit[x][y] = 1;
+                            queue.add(new Loc(x, y));
+                            }
+                    }
+                }
+                areas.add(size);
             }
         }
+        System.out.println(areas.size());
+        Collections.sort(areas);
+        Iterator it = areas.iterator();
+        System.out.print(it.next());
+        while(it.hasNext()){
+            System.out.print(" "+it.next());
+        }
+        System.out.println();
     }
 }

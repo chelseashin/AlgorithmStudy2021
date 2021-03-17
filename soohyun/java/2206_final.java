@@ -14,12 +14,6 @@ class Location{
         this.breakCount = breakCount;
         this.pathCount = pathCount;
     }
-    public Location(int row, int col){
-        this.row = row;
-        this.col = col;
-        this.breakCount = 1;
-        this.pathCount = 1;
-    }
 }
 
 class Main{
@@ -35,14 +29,14 @@ class Main{
             String rawLine = buf.readLine();
             for(int j = 0; j < col; j++){
                 maze[i][j] = rawLine.charAt(j) - 48;
-                visited[i][j] = -1;
+                visited[i][j] = Integer.MAX_VALUE;
             }
         }
 
 
         //dfs
         LinkedList<Location> stack = new LinkedList<>();
-        stack.add(new Location(0, 0));
+        stack.add(new Location(0, 0, 0, 1));
         int remainBreak = 1;
         int result = Integer.MAX_VALUE;
         int[] XDirection = {-1, 1, 0, 0};
@@ -50,7 +44,7 @@ class Main{
         visited[0][0] = 1;
         while(stack.size() > 0){
             Location location = stack.removeFirst();
-            System.out.println(location.row+" "+location.col+" "+location.pathCount);
+            //System.out.println(location.row+" "+location.col+" "+location.pathCount);
             if(location.row >= row-1 && location.col >= col-1){
                 //System.out.println("[mid] "+pathCount);
                 if(location.pathCount < result){
@@ -65,34 +59,31 @@ class Main{
                     newY = location.col + YDirection[i];
                     if(newX < 0 || newY < 0 || newX >= row || newY >= col)
                         continue;
+                    if(visited[newX][newY] <= location.breakCount) continue;
                     if(maze[newX][newY] == 1){
-                        if(location.breakCount == 1){
-                            if(visited[newX][newY] == -1){
-                                //visited[newX][newY] = 0;
-                                stack.add(new Location(newX, 
-                                                       newY, 
-                                                       location.breakCount-1,
-                                                       location.pathCount+1));
-                                //System.out.println(newX+" "+newY+" "+pathCount);
-                            }
-                        }
-                    }
-                    else{
-                        if(visited[newX][newY] == -1){
-                            visited[newX][newY] = 0;
+                        if(location.breakCount == 0){
+                            visited[newX][newY] = location.breakCount + 1;
                             stack.add(new Location(newX, 
                                                    newY, 
-                                                   location.breakCount,
+                                                   location.breakCount+1,
                                                    location.pathCount+1));
+                            //System.out.println(newX+" "+newY+" "+pathCount);
+                         }
+                    }
+                    else{
+                        visited[newX][newY] = location.breakCount;
+                        stack.add(new Location(newX, 
+                                               newY, 
+                                               location.breakCount,
+                                               location.pathCount+1));
                             //System.out.println(newX+" "+newY+" "+pathCount);
                         }
 
                     }
 
-                    //System.out.println("visited: "+visited[newX][newY]+" newX: "+newX+" newY: "+newY);
+                    //System.out.println("visited: "+visited[newX][newY]+" "+newX+" "+newY);
                 }
             }
-        }
         if(result == Integer.MAX_VALUE){
             System.out.println(-1);
         }
