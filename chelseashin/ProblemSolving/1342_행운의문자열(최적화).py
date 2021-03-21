@@ -30,8 +30,8 @@ charSet = set()
 
 for char in raw:
     idx = ord(char) - ord('a')
-    cntMap[idx] = cntMap[idx] + 1
+    cntMap[idx] += 1
     charSet.add(char)
-# print(charSet, cntMap, cntSum)
+print(charSet, cntMap)
 dfs(0, '')
 print(ret)
