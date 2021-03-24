@@ -57,16 +57,12 @@
    * 완주하지 못한 선수 / 전화번호 목록 / 위장 / 베스트앨범
 
 
-
-
 ##### :ballot_box_with_check: 2주차 문제 리스트(21-01-12)
 
 * 삼성기출
    1. 청소년 상어 - https://www.acmicpc.net/problem/19236
    2. 어른 상어 - https://www.acmicpc.net/problem/19237
    3. 스타트 택시 - https://www.acmicpc.net/problem/19238
-
-
 
 
 ##### :ballot_box_with_check: 3주차 문제 리스트(21-01-19)
@@ -78,7 +74,6 @@
 * 백준 추천 : 체스판 여행 1 - https://www.acmicpc.net/problem/16959
 
 
-
 ##### :ballot_box_with_check: 4주차 문제 리스트(21-01-27)
 
 * 삼성기출
@@ -88,8 +83,6 @@
 * 백준 추천 : 체스판 여행 1 - https://www.acmicpc.net/problem/16959
 
 
-
-
 ##### :ballot_box_with_check: 5주차 문제 리스트(21-02-03)
 
 * 삼성기출
@@ -97,8 +90,6 @@
   2. 낚시왕 - https://www.acmicpc.net/problem/17143
   3. 이차원 배열과 연산 - https://www.acmicpc.net/problem/17140
 * 추가 DP 문제 : 내리막 길 - https://www.acmicpc.net/problem/1520
-
-
 
 
 ##### :ballot_box_with_check: 6주차 문제 리스트(21-02-10)
@@ -143,6 +134,7 @@
 * CS 전공(면접 준비)
   * 운영체제 - 스케쥴러까지
 
+
 ##### :ballot_box_with_check: 10주차 문제 리스트(21-03-10)
 
 - 백준 알고리즘 문제
@@ -155,3 +147,29 @@
 
 * CS 전공(면접 준비)
   * 운영체제 마무리 - 메모리 & 캐시 / 페이징 교체 알고리즘 / 프로세스 동기화(뮤텍스와 세마포어) 등 
+
+
+##### :ballot_box_with_check: 11주차 문제 리스트(21-03-17)
+
+- 2020 하반기 LINE 코딩테스트 기출문제
+
+
+##### :ballot_box_with_check: 12주차 문제 리스트(21-03-24)
+
+- 백준 알고리즘 문제
+   1. 로또 - https://www.acmicpc.net/problem/6603
+   2. RGB거리 - https://www.acmicpc.net/problem/1149
+   3. 포도주 시식 - https://www.acmicpc.net/problem/2156
+   4. 환상의 짝꿍 - https://www.acmicpc.net/problem/15711
+   5. 로봇 - https://www.acmicpc.net/problem/1726
+   6. 행운의 문자열 - https://www.acmicpc.net/problem/1342
+
+
+##### :ballot_box_with_check: 12주차 문제 리스트(21-03-24)
+
+- 백준 알고리즘 문제
+   1. 입국심사 https://www.acmicpc.net/problem/3079
+   2. 인내의 도미노 장인 호석https://www.acmicpc.net/problem/20165
+   3. 가르침 https://www.acmicpc.net/problem/1062
+   4. 공주님을 구해라 https://www.acmicpc.net/problem/17836
+   5. 욕심쟁이 판다 https://www.acmicpc.net/problem/1937
