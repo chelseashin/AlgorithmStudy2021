@@ -1,6 +1,7 @@
 import sys
 WINE = list()
 MAX_COUNT = 2
+#걸린시간 1시간
 def drink_wine(wine_idx, continuous_count):
     amount_of_wine = 0
     if wine_idx >= len(WINE):

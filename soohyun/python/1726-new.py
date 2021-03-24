@@ -45,7 +45,6 @@ def main():
     end_x, end_y, end_dir = 0, 0, 0
     queue = list()
     result = 0
-
     #input
     M, N = tuple(map(int, sys.stdin.readline().split(" ")))
     for i in range(M):
