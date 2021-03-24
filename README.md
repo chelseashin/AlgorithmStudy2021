@@ -164,8 +164,11 @@
    5. 로봇 - https://www.acmicpc.net/problem/1726
    6. 행운의 문자열 - https://www.acmicpc.net/problem/1342
 
+* CS 전공(면접 준비)
+  * 네트워크 - OSI 7계층, TCP 3 way handshake & 4 way handshake, TCP/IP 흐름제어&혼잡제어
 
-##### :ballot_box_with_check: 12주차 문제 리스트(21-03-24)
+
+##### :ballot_box_with_check: 13주차 문제 리스트(21-03-31)
 
 - 백준 알고리즘 문제
    1. 입국심사 https://www.acmicpc.net/problem/3079
@@ -173,3 +176,6 @@
    3. 가르침 https://www.acmicpc.net/problem/1062
    4. 공주님을 구해라 https://www.acmicpc.net/problem/17836
    5. 욕심쟁이 판다 https://www.acmicpc.net/problem/1937
+
+* CS 전공(면접 준비)
+  * 네트워크 - UDP, 대칭키 & 공개키, HTTP/HTTPS, 로드밸런싱, Blocking & Non-Blocking I/O
