@@ -37,7 +37,6 @@ def bfs():
                 continue
             Q.append((r, c, nd, cnt+1))
             visited[r][c][nd] = 1
-        # print(Q)
 
 # main
 R, C = map(int, input().split())

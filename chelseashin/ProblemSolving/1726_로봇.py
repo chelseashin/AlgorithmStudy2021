@@ -41,13 +41,13 @@ def bfs():
                 continue
             # 다른 방향일 때
             if (d+i) % 4 == 1:   # 180도 회전이면(남<=>북, 동<=>서)
-                k = 2            # 동작 2번
+                cnt = 2            # 동작 2번
             else:
-                k = 1            # 동작 1번
+                cnt = 1            # 동작 1번
             # k = 2 if (i+d) % 4 == 1 else 1
             if not visited[r][c][i]:
                 Q.append((r, c, i))
-                visited[r][c][i] = visited[r][c][d] + k
+                visited[r][c][i] = visited[r][c][d] + cnt
 
 # main
 M, N = map(int, input().split())
@@ -56,6 +56,3 @@ sr, sc, sd = map(int, input().split())
 gr, gc, gd = map(int, input().split())
 
 bfs()
-# print(0%4, 1%4, 2%4, 3%4, 4%4)
-# print(2%4, 3%4, 5%4)
-# print(3%4, 4%4, 5%4)

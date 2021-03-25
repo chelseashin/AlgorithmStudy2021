@@ -11,6 +11,7 @@ def dfs(depth, temp):
     if depth == N:
         candidates.add(temp)
         return
+
     for i in range(N):
         if check[i]:
             continue
