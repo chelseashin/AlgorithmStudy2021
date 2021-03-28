@@ -22,6 +22,7 @@ def bfs(sr, sc):
     # 1 크기일 때도 검사
     if home * M - KLst[dis] >= 0:
         maxCnt = max(home, maxCnt)
+
     while dis < N+2:
         qlen = len(Q)
         for _ in range(qlen):
@@ -40,7 +41,6 @@ def bfs(sr, sc):
         if home*M - KLst[dis+1] >= 0:
             maxCnt = max(home, maxCnt)
         dis += 1
-
 
 # main
 T = int(input())
