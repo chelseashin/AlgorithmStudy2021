@@ -42,7 +42,7 @@ for tc in range(T):
                 i, n, d = values[0]
                 microbe[i][2] = n
                 microbe[i][3] = d
-            if len(values) > 1:     # 충돌 O
+            else:                   # 충돌 O
                 total = 0
                 maxIdx, maxCnt = -1, -1
                 for i, n, d in values:

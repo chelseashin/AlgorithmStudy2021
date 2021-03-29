@@ -19,17 +19,18 @@ for tc in range(T):
                 homeLst.append((i, j))
     # print(homeLst)
     maxCnt = 0
-    for k in range(1, N+2):
+    for size in range(1, N+2):
         for i in range(N):
             for j in range(N):
                 home = 0
                 for r, c in homeLst:
-                    if abs(i-r) + abs(j-c) < k:
+                    if abs(i-r) + abs(j-c) < size:
                         home += 1
-                if home * M - KLst[k] >= 0:
+                if home * M - KLst[size] >= 0:
                     maxCnt = max(home, maxCnt)
 
     print("#{} {}".format(tc+1, maxCnt))
+
     # 1 5
     # 2 4
     # 3 24

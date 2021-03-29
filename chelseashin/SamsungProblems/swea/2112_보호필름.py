@@ -23,10 +23,12 @@ def comb(depth, k, pick):
     global result
     if depth >= result:         # 최소 약품 주입 횟수보다 크거나 같으면 가지치기
         return
+
     if depth == pick:           # pick 횟수에 도달했다면 검사 후 갱신
         if testPerformance(film):
             result = min(result, depth)
         return
+    
     for i in range(k, D):
         for d in range(2):
             select.append(i)
