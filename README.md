@@ -171,11 +171,11 @@
 ##### :ballot_box_with_check: 13주차 문제 리스트(21-03-31)
 
 - 백준 알고리즘 문제
-   1. 입국심사 https://www.acmicpc.net/problem/3079
-   2. 인내의 도미노 장인 호석https://www.acmicpc.net/problem/20165
-   3. 가르침 https://www.acmicpc.net/problem/1062
-   4. 공주님을 구해라 https://www.acmicpc.net/problem/17836
-   5. 욕심쟁이 판다 https://www.acmicpc.net/problem/1937
+   1. 입국심사 - https://www.acmicpc.net/problem/3079
+   2. 인내의 도미노 장인 호석 - https://www.acmicpc.net/problem/20165
+   3. 가르침 - https://www.acmicpc.net/problem/1062
+   4. 공주님을 구해라 - https://www.acmicpc.net/problem/17836
+   5. 욕심쟁이 판다 - https://www.acmicpc.net/problem/1937
 
 * CS 전공(면접 준비)
   * 네트워크 - UDP, 대칭키 & 공개키, HTTP/HTTPS, 로드밸런싱, Blocking & Non-Blocking I/O
