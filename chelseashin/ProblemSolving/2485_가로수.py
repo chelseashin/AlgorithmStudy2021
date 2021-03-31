@@ -1,6 +1,7 @@
 # 21:30 start
 # 22:03 pass 1400ms로 시간 복잡도 꼴찌 이게 웬 일..
 # O(N^2)으로 오래 걸렸기 때문에 당연한 결과
+# 22:30 gcd 함수 써서 pass
 # gcd(Greatest Common Devisor) 최대공약수 구하는 함수 이용해서 148ms로 시간 단축 => 통과(소요시간 30m)
 
 import sys
@@ -35,5 +36,5 @@ print((trees[-1]-trees[0]) // max_gap + 1 - n)
 #             break
 #     if flag:
 #         max_gap = max(max_gap, k)
-
+#
 # print((trees[-1] - trees[0]) // max_gap + 1 - n)

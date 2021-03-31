@@ -3,20 +3,38 @@
 # limit 넘으면 작은 값만 큐에 다시 담고 큰 값은 그대로 pop
 # limit 안 넘으면 둘다 pop
 
+# 아래 코드 개선
 from collections import deque
 def solution(people, limit):
     result = 0
     Q = deque(sorted(people))
-    print(Q)
     while Q:
-        left = Q.popleft()
-        if not Q:
+        left = Q[0]
+        if len(Q) == 1:
             return result + 1
-        right = Q.pop()
+        right = Q[-1]
         if left + right > limit:
-            Q.appendleft(left)
+            Q.pop()
+        else:
+            Q.popleft()
+            Q.pop()
         result += 1
     return result
+
+# 정답 코드
+# from collections import deque
+# def solution(people, limit):
+#     result = 0
+#     Q = deque(sorted(people))
+#     while Q:
+#         left = Q.popleft()
+#         if not Q:
+#             return result + 1
+#         right = Q.pop()
+#         if left + right > limit:
+#             Q.appendleft(left)
+#         result += 1
+#     return result
 
 # 첫 번째 시도
 # 고작 30%만 통과..
