@@ -11,7 +11,7 @@ def domino(sr, sc, sd, length):
     if board[sr][sc]:
         board[sr][sc] = 0
         temp += 1
-    for dis in range(length-1):
+    for _ in range(length-1):
         sr += dirInfo[sd][0]
         sc += dirInfo[sd][1]
         if not (0 <= sr < N and 0 <= sc < M):
@@ -36,10 +36,10 @@ for game in range(R):
     temp = 0
     if board[off_r][off_c]:
         domino(off_r, off_c, off_d, board[off_r][off_c])
+    total += temp
 
     # 수비 : 도미노 세우기
     board[def_r][def_c] = raw[def_r][def_c]
-    total += temp
 
 print(total)
 for r in range(N):

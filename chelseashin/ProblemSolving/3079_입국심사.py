@@ -5,7 +5,7 @@
 from sys import stdin
 input = stdin.readline
 
-N, M = map(int, input().split())
+N, M = map(int, input().rstrip().split())
 time = [int(input()) for _ in range(N)]
 
 left = min(time)                    # 최소 시간
@@ -16,10 +16,13 @@ while left <= right:
     mid = (left + right) // 2
     for i in range(N):      # 입국심사대별로 검사
         total += mid // time[i]
+        if total >= M:
+            break
     if total >= M:          # 검사할 수 있는 총 사람 수가 M보다 크면 가능한 경우
         right = mid - 1     # 오른쪽에서 좁혀주기
         answer = min(answer, mid)   # 최솟값 갱신
     else:
         left = mid + 1      # 왼쪽에서 좁혀주기
     # print(left, right, mid, total)
+
 print(answer)

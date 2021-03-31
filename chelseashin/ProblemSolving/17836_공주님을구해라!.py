@@ -14,12 +14,12 @@ def bfs():
     visited = [[-1] * M for _ in range(N)]
     visited[0][0] = 0
     Q = deque([(0, 0)])
-    minTime = 0
+    gramTime = 0
     while Q:
         r, c = Q.popleft()
         if (r, c) == (N-1, M-1):    # 목적지까지 정상 도달
-            if minTime:
-                return min(visited[r][c], minTime)
+            if gramTime:
+                return min(visited[r][c], gramTime)
             return visited[r][c]
 
         for d in range(4):
@@ -33,11 +33,11 @@ def bfs():
             visited[nr][nc] = visited[r][c] + 1
             Q.append((nr, nc))
             if A[nr][nc] == 2:      # 그람 구했다면 현 위치에서 목적지까지 직통시간 미리 구함
-                minTime = visited[nr][nc] + (abs(N-1-nr) + abs(M-1-nc))
+                gramTime = visited[nr][nc] + (abs(N-1-nr) + abs(M-1-nc))
 
     # 목적지까지 정상적으로 도달하지 못한 경우
-    if minTime:
-        return minTime
+    if gramTime:
+        return gramTime
     return T + 1
 
 # main
