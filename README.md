@@ -103,6 +103,7 @@
   * 자료구조 - Array / Linked List / Queue / Stack / Hash Table / Tree / Binary Search Tree / Heap / Graph
 
 
+
 ##### :ballot_box_with_check: 7주차 문제 리스트(21-02-17)
 
 * Programmers 코딩테스트 고득점 Kit
@@ -179,3 +180,17 @@
 
 * CS 전공(면접 준비)
   * 네트워크 - UDP, 대칭키 & 공개키, HTTP/HTTPS, 로드밸런싱, Blocking & Non-Blocking I/O
+
+
+##### :ballot_box_with_check: 14주차 문제 리스트(21-04-07)
+
+- 백준 알고리즘 문제
+   1. 공유기 설치 -  https://www.acmicpc.net/problem/2110
+   2. 신입사원 - https://www.acmicpc.net/problem/1946
+   3. 로봇 시뮬레이션 - https://www.acmicpc.net/problem/2174
+   4. 리모컨 - https://www.acmicpc.net/problem/1107
+   5. 스도쿠 - https://www.acmicpc.net/problem/2239
+   6. 숨바꼭질2 - https://www.acmicpc.net/problem/12851
+
+* CS 전공(면접 준비)
+   * 데이터베이스
