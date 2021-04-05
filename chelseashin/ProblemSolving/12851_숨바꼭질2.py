@@ -1,6 +1,8 @@
 # 19:42 start
 # 20:17 finish
 # 20:23 52%에서 틀렸습니다..
+# pass하긴 함..
+# 참고 https://haerang94.tistory.com/74
 
 from sys import stdin
 input = stdin.readline
