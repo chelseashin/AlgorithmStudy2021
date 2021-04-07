@@ -194,3 +194,16 @@
 
 * CS 전공(면접 준비)
    * 데이터베이스
+
+##### :ballot_box_with_check: 15주차 문제 리스트(21-04-14)
+
+- 백준 알고리즘 문제
+   1. 숫자 카드 https://www.acmicpc.net/problem/10815
+   2. 문자열 집합 https://www.acmicpc.net/problem/14425
+   3. 미네랄 https://www.acmicpc.net/problem/2933
+   4. 상범 빌딩 https://www.acmicpc.net/problem/6593
+   5. 성곽 https://www.acmicpc.net/problem/2234
+   6. 캐슬 디펜스 https://www.acmicpc.net/problem/17135
+
+* CS 전공(면접 준비)
+   * 데이터베이스
