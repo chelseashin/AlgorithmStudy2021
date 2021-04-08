@@ -21,8 +21,7 @@ def moveRobot(num, cmd, cnt):
         cnt %= 4        # 4번 돌면 제자리이므로 4로 나눈 나머지를 취함
         for _ in range(cnt):
             d = changeDir[cmd][d]
-        nd = d
-        robotInfo[num][2] = nd       # 새로운 방향 등록 
+        robotInfo[num][2] = d       # 새로운 방향 등록 
 
     # 직진 명령 - d방향으로 cnt칸 만큼 이동
     else:

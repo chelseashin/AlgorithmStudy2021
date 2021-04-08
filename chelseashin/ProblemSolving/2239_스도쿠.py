@@ -2,7 +2,7 @@ from sys import stdin
 input = stdin.readline
 
 # 나의 풀이
-# # 행 체크
+# 행 체크
 # def rowCheck(r, num):
 #     for c in range(9):
 #         if board[r][c] == num:

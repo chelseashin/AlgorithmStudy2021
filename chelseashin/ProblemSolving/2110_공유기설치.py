@@ -21,10 +21,10 @@ right = A[-1] - A[0]
 result = 1
 while left <= right:
     mid = (left + right) // 2       # 두 공유기 사이의 거리 의미
-    value = A[0]
+    value = A[0]                    # 가장 왼쪽에 설치
     cnt = 1
     for i in range(1, N):
-        if A[i] >= value + mid:
+        if A[i] >= value + mid:     # 설치 간격 충족
             value = A[i]
             cnt += 1
         if cnt >= C:
