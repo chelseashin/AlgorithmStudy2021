@@ -207,3 +207,15 @@
 
 * CS 전공(면접 준비)
    * 데이터베이스
+
+##### :ballot_box_with_check: 16주차 문제 리스트(21-04-21)
+
+- 2020 하반기 `NAVER` 코딩테스트 기출문제(3문제)
+
+- 백준 알고리즘 문제
+   1. 선발 명단 - https://www.acmicpc.net/problem/3980
+   2. 합분해 - https://www.acmicpc.net/problem/2225
+   3. 타일 뒤집기 (Easy) - https://www.acmicpc.net/problem/14711
+
+조금만 더 힘냅시다, Keep Going!:smile:
+
