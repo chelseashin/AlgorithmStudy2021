@@ -28,8 +28,8 @@ T = int(input())
 for _ in range(T):
     stats = [list(map(int, input().split())) for _ in range(11)]
     max_score = 0
-    order = [0] * 11
-    visited = [0] * 11
+    order = [0] * 11		# 포지션별 선수 배치
+    visited = [0] * 11		# 방문 체크용
     perm(0, 0)
     print(max_score)
 
