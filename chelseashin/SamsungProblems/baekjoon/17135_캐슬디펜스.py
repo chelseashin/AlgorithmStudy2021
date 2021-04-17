@@ -8,7 +8,7 @@ input = stdin.readline
 from collections import deque
 from itertools import combinations
 
-# 상 좌 우
+# 좌 상 우
 dr = (0, -1, 0)
 dc = (-1, 0, 1)
 

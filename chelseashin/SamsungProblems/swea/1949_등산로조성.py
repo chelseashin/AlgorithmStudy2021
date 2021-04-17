@@ -16,17 +16,17 @@ def dfs(r, c, chance):
         nc = c + dc[d]
         if not (0 <= nr < N and 0 <= nc < N) or visited[nr][nc]:
             continue
-        if A[r][c] > A[nr][nc]:
+        if A[r][c] > A[nr][nc]:     # 이동할 곳이 현재 위치보다 낮은 경우 정상적으로 시행
             visited[nr][nc] = visited[r][c] + 1
             dfs(nr, nc, chance)
             visited[nr][nc] = 0
         elif chance and A[nr][nc] - K < A[r][c]:
-            temp = A[nr][nc]
+            temp = A[nr][nc]            # 깎기 전 봉우리의 위치 저장
             A[nr][nc] = A[r][c] - 1
             visited[nr][nc] = visited[r][c] + 1
-            dfs(nr, nc, chance-1)
+            dfs(nr, nc, chance-1)       # 산 깎을 기회 사용
             visited[nr][nc] = 0
-            A[nr][nc] = temp
+            A[nr][nc] = temp            # 복원
 
 # main
 T = int(input())
@@ -43,7 +43,7 @@ for tc in range(T):
     visited = [[0] * N for _ in range(N)]
     for i in range(N):
         for j in range(N):
-            if A[i][j] == top:
+            if A[i][j] == top:       # 가장 높은 봉우리에서 시작
                 visited[i][j] = 1
                 dfs(i, j, 1)
                 visited[i][j] = 0
