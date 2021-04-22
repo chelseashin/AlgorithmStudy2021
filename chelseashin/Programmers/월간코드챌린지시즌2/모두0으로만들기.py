@@ -1,3 +1,4 @@
+# 문제 : https://programmers.co.kr/learn/courses/30/lessons/76503
 # 아이디어 : https://prgms.tistory.com/47?category=882795
 # 18개 중 11개 성공, 7개 실패..ㅠㅠ
 # 그리디로 접근
@@ -53,3 +54,7 @@ def solution(a, edges):
 
 print(solution([-5,0,2,1,2], [[0,1],[3,4],[2,3],[0,3]]))
 print(solution([0,1,0], [[0,1],[1,2]]))
+
+# 참고해보자
+# https://sinawi.tistory.com/262?category=649580
+# https://bladejun.tistory.com/120
