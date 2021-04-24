@@ -1,3 +1,4 @@
+# 참고 코드 : https://deok2kim.tistory.com/212
 # 분할정복으로 풀이
 
 def solution(arr):
