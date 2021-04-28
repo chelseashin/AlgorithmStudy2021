@@ -222,5 +222,14 @@
 - 프로그래머스 월간 코드 챌린지 시즌2 - 4문제(음양 더하기, 괄호 회전하기, 모두 0으로 만들기, RPG와 쿼리)
 - 프로그래머스 월간 코드 챌린지 시즌1 - 4문제(두 개 뽑아서 더하기, 삼각 달팽이, 풍선 터트리기, 짝수 행 세기)
 
+##### :ballot_box_with_check: 18주차 문제 리스트(21-05-05)
+
+- 백준 알고리즘 문제
+   1. 생태학 https://www.acmicpc.net/problem/4358
+   2. 상어 초등학교 https://www.acmicpc.net/problem/21608
+   3. 상어 중학교 https://www.acmicpc.net/problem/21609
+   4. 마법사 상어와 비바라기 https://www.acmicpc.net/problem/21610
+   5. 마법사 상어와 블리자드 https://www.acmicpc.net/problem/21611
+
 조금만 더 힘냅시다, Keep Going!:smile:
 
