@@ -1,5 +1,7 @@
-# 2시간 40분 시도했으나 실패..
-# 내일 다시 ㄱㄱ..
+# 다른 사람 풀이 - 시간: 188ms로 시간 1위 달성^_^
+# 는 사실 다른 분 풀이 참고,, 링크는 https://hillier.tistory.com/76
+# 확실히 heap 사용하는 것보다 빠르다. 
+# O(N^2)으로 바로 학생 놓을 위치 찾기
 
 from sys import stdin
 input = stdin.readline
@@ -28,7 +30,6 @@ def satisfied():
     return result
 
 def drawIdx(idx):
-    # print("======================", idx, "=======================")
     maxLike, maxEmpty = -1, -1
     maxR, maxC = -1, -1
     for r in range(N):
@@ -47,23 +48,23 @@ def drawIdx(idx):
                 # 2. 두 번째는 인접한 칸 중 빈 칸 갯수
                 if not A[nr][nc]:
                     emptyCnt += 1
-            # maxLike가 갱신됐거나
+            # 핵심!
+            # maxLike를 갱신할 수 있거나 (maxLike와 likeCnt가 같고 maxEmpty를 갱신할 수 있다면)
             if maxLike < likeCnt or (maxLike == likeCnt and maxEmpty < emptyCnt):
-                maxR, maxC = r, c
-                maxLike, maxEmpty = likeCnt, emptyCnt
+                maxR, maxC = r, c                       # 위치 갱신
+                maxLike, maxEmpty = likeCnt, emptyCnt   # maxLike, maxEmpty 갱신
+
+    A[maxR][maxC] = idx     # 자리 배치
 
 # main
 N = int(input())
 A = [[0] * N for _ in range(N)]
-likeInfo = dict()
+likeInfo = dict()          # 학생 번호별 좋아하는 학생 정보 {학생 번호 : 좋아하는 학생 Set}
 for _ in range(N**2):
     info = list(map(int, input().split()))
     likeInfo[info[0]] = set(info[1:])
-# print("likeInfo", likeInfo)
+
 for idx in likeInfo.keys():
     drawIdx(idx)
-    # for a in A:
-    #     print(a)
-    # print()
 
 print(satisfied())      # 만족도 조사

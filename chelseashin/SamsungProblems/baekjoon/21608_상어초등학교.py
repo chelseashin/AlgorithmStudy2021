@@ -1,5 +1,7 @@
+# 나의 풀이
 # 22:40 start
 # 23:09 pass
+# 시간 : 264ms
 # 어제는 왜 이렇게 못 풀었는지 이해가 안 된다,, 
 # Heap으로 접근하니 30분만에 pass했다.
 # 요새 시뮬레이션 문제에 소홀했더니, 이런 결과가ㅠㅠ 더 더 정진하자 
@@ -59,7 +61,7 @@ A = [[0] * N for _ in range(N)]
 likeInfo = dict()   # 학생 번호별 좋아하는 학생 정보 {학생 번호 : 좋아하는 학생 Set}
 for _ in range(N**2):
     info = list(map(int, input().split()))
-    likeInfo[info[0]] = set(info[1:])
+    likeInfo[info[0]] = set(info[1:])   # O(1)로 좋아하는 친구 찾기 위해 Set 사용
 
 # 주어진 순서대로 학생 자리 배치
 for idx in likeInfo.keys():
