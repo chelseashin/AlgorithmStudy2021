@@ -31,7 +31,7 @@ def solution(n):
     # for row in triangle:
     #     for value in row:
     #         answer.append(value)
-    return [value for row in triangle for value in row ]     # 한 줄 정답 출력
+    return [value for row in triangle for value in row]     # 한 줄 정답 출력
 
 print(solution(4))
 print(solution(5))
