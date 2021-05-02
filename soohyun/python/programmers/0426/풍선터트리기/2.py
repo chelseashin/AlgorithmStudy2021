@@ -1,3 +1,5 @@
+# 시간초과..
+# O(N^2)의시간이 든다.
 def solution(a):
     if len(a) >= 3:
         answer = 2
