@@ -76,7 +76,7 @@ def findMaxBlockGroup():
             score += blockCnt ** 2  	# 점수 더하기
             removeBlocks(-row, -col)
         else:
-            blockGroup = False      # 가장 블록 그룹이 2보다 작음 => 불가능
+            blockGroup = False      # 가장 큰 블록 그룹이 2보다 작음 => 불가능
     else:
         blockGroup = False          # 블록 그룹 없음 => 불가능
 
