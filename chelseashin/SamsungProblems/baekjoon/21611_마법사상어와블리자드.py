@@ -56,13 +56,13 @@ def explodeMarbles(marbles):
                 else: break
             if len(temp) < 4:
                 newMarbles.extend(temp)
-            else:
+            else:             # 길이가 4 이상 넘어가면
                 bomb = True   # 폭발
                 result += temp[0] * len(temp)   # (구슬 번호 × 폭발한 구슬의 개수) 더하기
-        if bomb:              # 폭발한 적 있으면 갱신
-            marbles = newMarbles
+        if bomb:
+            marbles = newMarbles    # 폭발한 적 있으면 갱신
         else:
-            return newMarbles     # 폭발할 구슬 없으면 while문 나가기
+            return newMarbles       # 폭발할 구슬 없으면 while문 나가기
 
 # 구슬 재배치
 def drawMarbles(marbles):
@@ -76,13 +76,11 @@ def drawMarbles(marbles):
             for _ in range(dis): 
                 nr = r + dr[d]
                 nc = c + dc[d]
-                if not (0 <= nr < N and 0 <= nc < N):
-                    return
+                if not (0 <= nr < N and 0 <= nc < N): return    # 격자 밖으로 나가면
                 if (r, c) != (N//2, N//2):
-                    A[nr][nc] = marbles[idx]    # 맵에 구슬 그리기
+                    A[nr][nc] = marbles[idx]        # 맵에 구슬 그리기
                     idx += 1
-                    if idx == len(marbles):     # 구슬 다 그렸으면 리턴
-                        return
+                    if idx == len(marbles): return  # 구슬 인덱스 넘어가면(다 그렸으면) 리턴
                 r, c = nr, nc
             d = (d+1) % 4      # 방향 전환
         dis += 1               # 거리 + 1
