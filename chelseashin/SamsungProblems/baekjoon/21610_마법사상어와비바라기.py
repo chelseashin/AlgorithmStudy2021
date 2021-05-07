@@ -45,7 +45,6 @@ def makeNewClouds():
             if A[r][c] >= 2:        # 물의 양 2 이상인 모든 칸에 물이 생기고
                 clouds.add((r, c))  # 구름의 새 위치 추가
                 A[r][c] -= 2        # 물의 양 2 줄어듦
-                if A[r][c] < 0: A[r][c] = 0
     return clouds
 
 # main
