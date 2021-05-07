@@ -231,5 +231,11 @@
    4. 마법사 상어와 비바라기 https://www.acmicpc.net/problem/21610
    5. 마법사 상어와 블리자드 https://www.acmicpc.net/problem/21611
 
+##### :ballot_box_with_check: 19주차 문제 리스트(21-05-12)
+
+- 프로그래머스 2020 카카오 인턴십 기출문제 - 5문제(키패드 누르기, 수식 최대화, 보석 쇼핑, 경주로 건설, 동굴 탐험)
+
+
+------
 조금만 더 힘냅시다, Keep Going!:smile:
 
