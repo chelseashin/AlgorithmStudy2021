@@ -24,14 +24,11 @@ def solution(t, r):
         if info[time]:  # 값이 남았을 때
             if time+1 in info.keys():   # 다음 시간에 값이 있으면
                 info[time+1].extend(info[time])
-                heapify(info[time+1])   # heapify
-                del info[time]
             else:   # 다음 시간에 없으면
                 info[time+1] = info[time]
-                del info[time]
+            heapify(info[time+1])   # heapify
         time += 1
         # print("현재 info 상태", info, "answer 상태", answer)
-    
     return answer
 
 print(solution([0,1,3,0], [0,1,2,3]))
