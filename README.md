@@ -233,7 +233,17 @@
 
 ##### :ballot_box_with_check: 19주차 문제 리스트(21-05-12)
 
-- 프로그래머스 2020 카카오 인턴십 기출문제 - 5문제(키패드 누르기, 수식 최대화, 보석 쇼핑, 경주로 건설, 동굴 탐험)
+- 프로그래머스 2020 카카오 인턴십 기출문제 - 4문제(키패드 누르기, 수식 최대화, 보석 쇼핑, 경주로 건설)
+- 2021 Summer Coding - 스키장
+
+##### :ballot_box_with_check: 20주차 문제 리스트(21-05-19)
+
+   1. 회전 초밥 https://www.acmicpc.net/problem/2531
+   2. 두 용액 https://www.acmicpc.net/problem/2470
+   3. 잠수함식별 https://www.acmicpc.net/problem/2671
+   4. 특정한 최단 경로 https://www.acmicpc.net/problem/1504
+   5. LCS https://www.acmicpc.net/problem/9251
+   6. 최솟값과 최댓값 https://www.acmicpc.net/problem/2357
 
 
 ------
