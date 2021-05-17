@@ -28,7 +28,6 @@ def solution(t, r):
                 info[time+1] = info[time]
             heapify(info[time+1])   # heapify
         time += 1
-        # print("현재 info 상태", info, "answer 상태", answer)
     return answer
 
 print(solution([0,1,3,0], [0,1,2,3]))
