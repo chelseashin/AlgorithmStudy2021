@@ -247,7 +247,12 @@
 
 ##### :ballot_box_with_check: 21주차 문제 리스트(21-05-26)
    
-   * 추가하기
+   1. 가스관 https://www.acmicpc.net/problem/2931
+   2. 구간합구하기 https://www.acmicpc.net/problem/2042
+   3. 부분합 https://www.acmicpc.net/problem/1806
+   4. N-Queen https://www.acmicpc.net/problem/9663
+   5. 빙산 https://www.acmicpc.net/problem/2573
+   
 
 ------
 조금만 더 힘냅시다, Keep Going!:smile:
