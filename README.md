@@ -255,7 +255,11 @@
    
 ##### :ballot_box_with_check: 22주차 문제 리스트(21-06-02)
 
-   추가해주세요~~~~~
+  1. 수묶기 https://www.acmicpc.net/problem/1744
+  2. 소문난 칠공주 https://www.acmicpc.net/problem/1941
+  3. 다리만들기 https://www.acmicpc.net/problem/2146
+  4. ACM Craft https://www.acmicpc.net/problem/1005
+  5. 스티커 붙이기 https://www.acmicpc.net/problem/18808
 
 ------
 조금만 더 힘냅시다, Keep Going!:smile:
