@@ -245,6 +245,21 @@
    5. LCS https://www.acmicpc.net/problem/9251
    6. 최솟값과 최댓값 https://www.acmicpc.net/problem/2357
 
+##### :ballot_box_with_check: 21주차 문제 리스트(21-05-26)
+   
+   1. 가스관 https://www.acmicpc.net/problem/2931
+   2. 구간합구하기 https://www.acmicpc.net/problem/2042
+   3. 부분합 https://www.acmicpc.net/problem/1806
+   4. N-Queen https://www.acmicpc.net/problem/9663
+   5. 빙산 https://www.acmicpc.net/problem/2573
+   
+##### :ballot_box_with_check: 22주차 문제 리스트(21-06-02)
+
+  1. 수묶기 https://www.acmicpc.net/problem/1744
+  2. 소문난 칠공주 https://www.acmicpc.net/problem/1941
+  3. 다리만들기 https://www.acmicpc.net/problem/2146
+  4. ACM Craft https://www.acmicpc.net/problem/1005
+  5. 스티커 붙이기 https://www.acmicpc.net/problem/18808
 
 ------
 조금만 더 힘냅시다, Keep Going!:smile:

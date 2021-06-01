@@ -31,7 +31,7 @@ def solution(board):
                 if d == nd: temp = 100
                 else: temp = 600
                 # 첫 방문이거나 갱신할 수 있을 때에만
-                if  visited[nr][nc] == float('inf') or visited[nr][nc] > visited[r][c] + temp:
+                if visited[nr][nc] == float('inf') or visited[nr][nc] > visited[r][c] + temp:
                     visited[nr][nc] = visited[r][c] + temp
                     Q.append((nr, nc, nd, cost+temp))
         #             print((r, c, d, cost), ">>>>", (nr, nc, nd, cost+temp))
