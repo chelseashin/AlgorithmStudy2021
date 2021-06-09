@@ -269,6 +269,14 @@
   4. 미친 로봇 https://www.acmicpc.net/problem/1405
   5. 작업 https://www.acmicpc.net/problem/2056
 
+##### :ballot_box_with_check: 24주차 문제 리스트(21-06-16)
+
+   1. 체스판 여행1 https://www.acmicpc.net/problem/16959
+   2. 벽 부수고 이동하기 2 https://www.acmicpc.net/problem/14442
+   3. 파티 https://www.acmicpc.net/problem/1238
+   4. 아기 상어 https://www.acmicpc.net/problem/16236
+   5. AC https://www.acmicpc.net/problem/5430
+   6. 박스 채우기 https://www.acmicpc.net/problem/1493
 
 ------
 조금만 더 힘냅시다, Keep Going!:smile:
