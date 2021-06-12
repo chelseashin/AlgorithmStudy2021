@@ -8,14 +8,12 @@ def dfs(N, visited, start, poss):
         nrow, ncol = start[0] + i, start[1] + j
         if not visited.get((nrow, ncol), False):
             visited[(nrow, ncol)] = True
-            #print(visited)
 
             N[0] -= 1
             semi_result = dfs(N, visited, 
                           (nrow, ncol), 
                           N[DIECTION[(i, j)]] * poss)
             result += semi_result
-            #print(semi_result, result)
             visited.pop((nrow, ncol))
             N[0] += 1
     return result

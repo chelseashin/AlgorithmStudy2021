@@ -33,7 +33,8 @@ def bfs(maze, horse_chance, r_len, c_len):
                                 if (dia_row, dia_col) not in dia_visited: 
                                     #print("dia", "(",dia_row, dia_col, ") count:", count+1)
                                     queue.append((dia_row, dia_col, count+1, horse_chance-1))
-                                    dia_visited.add((dia_row, dia_col))                
+                                    dia_visited.add((dia_row, dia_col))   
+                                                 
                 if  maze[cur_row][cur_col] == 0:
                     if (cur_row, cur_col) not in visited:
                         # print("cur", "(", cur_row,  cur_col, ")count:", count+1)
