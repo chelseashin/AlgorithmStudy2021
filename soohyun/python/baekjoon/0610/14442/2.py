@@ -20,12 +20,15 @@ def make_visited(broken_chance):
 
 
 def bfs(maze, width, height, broken_chance):
-    visited = make_visited(broken_chance)
-    visited[0].add((0,0))
+    visited = [[[0]*(broken_chance+1) for _ in range(width)] for _ in range(height)]
+    
     queue =deque([PersonLoc((0, 0), 1, broken_chance)])
+    visited[0][0][0] = 1
+    count = 0
     while queue:
         cur_personloc = queue.popleft()
         #print(cur_personloc)
+        count += 1
         
         if cur_personloc.loc == (height-1, width-1):
             return cur_personloc.count
@@ -34,8 +37,9 @@ def bfs(maze, width, height, broken_chance):
             cur_row, cur_col = row + dr, col + dc
             if 0 <= cur_row < height and 0 <= cur_col < width:
                 if maze[cur_row][cur_col] == '0':
-                    if (cur_row, cur_col) not in visited[cur_personloc.left_broken_chance]:
-                        visited[cur_personloc.left_broken_chance].add((cur_row, cur_col))
+                    if not visited[cur_row][cur_col][cur_personloc.left_broken_chance]:
+                        # visited[cur_personloc.left_broken_chance].add((cur_row, cur_col))
+                        visited[cur_row][cur_col][cur_personloc.left_broken_chance] = 1
                         queue.append(PersonLoc(
                             (cur_row, cur_col),
                             cur_personloc.count + 1,
@@ -43,8 +47,8 @@ def bfs(maze, width, height, broken_chance):
                             ))
                 if maze[cur_row][cur_col] == '1':
                     if cur_personloc.left_broken_chance > 0:
-                        if (cur_row, cur_col) not in visited[cur_personloc.left_broken_chance-1]:
-                                visited[cur_personloc.left_broken_chance-1].add((cur_row, cur_col))
+                        if not visited[cur_row][cur_col][cur_personloc.left_broken_chance-1]:
+                                visited[cur_row][cur_col][cur_personloc.left_broken_chance-1] = 1
                                 queue.append(PersonLoc(
                                 (cur_row, cur_col),
                                 cur_personloc.count + 1,

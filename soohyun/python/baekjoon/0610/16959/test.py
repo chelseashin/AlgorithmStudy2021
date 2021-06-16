@@ -1,6 +1,8 @@
 import sys
 import math
 import temp
+import ref
+
 
 
 def make_table(arr, N):
@@ -22,11 +24,22 @@ def print_table(table, num):
 
 def dfs(num, cur_num, data, visited):
     if num == cur_num:
-        print("==start==")
+           
+        #print("==start==")
         table = make_table(data, int(math.sqrt(num)))
-        print_table(table, int(math.sqrt(num)))
-        temp.game(int(math.sqrt(num)), table)
-        print("==end==")
+        #print_table(table, int(math.sqrt(num)))
+        #with open(f'./out/{num}_2.txt','a') as txt:
+        i = temp.game(int(math.sqrt(num)), table)
+        j = ref.bfs(table, int(math.sqrt(num)))
+        if i != j:
+            print("diff", int(math.sqrt(num)))
+            print("my:", i, "sol:", j)
+            print_table(table, int(math.sqrt(num)))
+        else:
+            print("pass")
+        
+            
+        #print("==end==")
 
     else:
         for i in range(0, num):

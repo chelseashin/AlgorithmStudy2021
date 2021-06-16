@@ -1,9 +1,9 @@
 import sys
 from collections import defaultdict
 input = sys.stdin.readline
-MOVE = {0: [(-2, -1), (-2, 1), (2, -1), (2, 1), (1, 2), (-1, 2), (-1, 2), (-1, -2)], 
-        1: [(1, 1), (-1, 1), (1, -1), (-1, -1)], 
-        2: [(-1, 0), (0, -1), (1, 0), (0, 1)]}
+MOVE = {0: [(-2, -1), (-2, 1), (2, -1), (2, 1), (1, 2), (-1, 2), (1, -2), (-1, -2)], # 나이트
+        1: [(1, 1), (-1, 1), (1, -1), (-1, -1)],  #비숍
+        2: [(-1, 0), (0, -1), (1, 0), (0, 1)]} #룩
 
 
 class ChessInfo():
@@ -36,6 +36,8 @@ def get_arrive_queue(queue, end, count):
         #print("post queue", chess_info)
         if chess_info.loc == end and chess_info.count == count:
             arr.append(chess_info.piece)
+        elif chess_info.count != count:
+            break
     return arr
 
 
@@ -73,7 +75,7 @@ def bfs(start, end, N, start_pieces):
                                     chess_info.count + 1
                                 ))
                 visited[next_piece].add(chess_info.loc)
-                #print("append queue", queue[-1])
+                #print("change append queue", queue[-1])
 
         # 말을 바꾸지 않고 진행하는 경우
         for i, j in MOVE[chess_info.piece]:
@@ -89,7 +91,7 @@ def bfs(start, end, N, start_pieces):
                             (nr, nc),
                             chess_info.count + 1
                         ))
-                        #print("append queue", queue[-1])
+                        #print("nonchange append queue", queue[-1])
     return 0, 0
 
 
@@ -99,10 +101,10 @@ def game(N, num_loc):
     for i in range(1, N*N):
         start = num_loc[i]
         end = num_loc[i+1]
-        print("from:", i, start, "to:", i+1, end)
+        #print("from:", i, start, "to:", i+1, end, "end_pieces", end_pieces)
         end_pieces, bfs_result = bfs(start, end, N, end_pieces)
         result += bfs_result
-        print("result:", result)
+        #print("bfs_result:",bfs_result,"result:", result)
     return result
 
 
