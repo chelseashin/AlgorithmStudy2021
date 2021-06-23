@@ -278,7 +278,7 @@
    5. AC https://www.acmicpc.net/problem/5430
    6. 박스 채우기 https://www.acmicpc.net/problem/1493
 
-##### :ballot_box_with_check: 24주차 문제 리스트(21-06-16)
+##### :ballot_box_with_check: 25주차 문제 리스트(21-06-23)
 
    1. 별 찍기 - 11 https://www.acmicpc.net/problem/2448
    2. 암호 만들기 https://www.acmicpc.net/problem/1759
