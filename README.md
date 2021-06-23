@@ -278,6 +278,14 @@
    5. AC https://www.acmicpc.net/problem/5430
    6. 박스 채우기 https://www.acmicpc.net/problem/1493
 
+##### :ballot_box_with_check: 24주차 문제 리스트(21-06-16)
+
+   1. 별 찍기 - 11 https://www.acmicpc.net/problem/2448
+   2. 암호 만들기 https://www.acmicpc.net/problem/1759
+   3. 불 https://www.acmicpc.net/problem/5427
+   4. 트리 https://www.acmicpc.net/problem/1068
+   5. 로봇 청소기 https://www.acmicpc.net/problem/14503
+   6. 독특한 계산기 https://www.acmicpc.net/problem/19591
 ------
 조금만 더 힘냅시다, Keep Going!:smile:
 
