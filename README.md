@@ -278,6 +278,23 @@
    5. AC https://www.acmicpc.net/problem/5430
    6. 박스 채우기 https://www.acmicpc.net/problem/1493
 
+##### :ballot_box_with_check: 25주차 문제 리스트(21-06-23)
+
+   1. 별 찍기 - 10 https://www.acmicpc.net/problem/2447
+   2. 체스판 여행 2 https://www.acmicpc.net/problem/16952
+   3. 적록색약 https://www.acmicpc.net/problem/10026
+   4. 인하니카 공화국 https://www.acmicpc.net/problem/12784
+   5. LCA https://www.acmicpc.net/problem/11437
+   6. 메뉴 리뉴얼 https://programmers.co.kr/learn/courses/30/lessons/72411
+
+##### :ballot_box_with_check: 26주차 문제 리스트(21-06-30)
+
+   1. 별 찍기 - 11 https://www.acmicpc.net/problem/2448
+   2. 암호 만들기 https://www.acmicpc.net/problem/1759
+   3. 불 https://www.acmicpc.net/problem/5427
+   4. 트리 https://www.acmicpc.net/problem/1068
+   5. 로봇 청소기 https://www.acmicpc.net/problem/14503
+   6. 독특한 계산기 https://www.acmicpc.net/problem/19591
 ------
 조금만 더 힘냅시다, Keep Going!:smile:
 
