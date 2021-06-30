@@ -35,7 +35,6 @@ class Node():
 def make_tree(bigraph, node_num):
     tree = [Node() for _ in range(node_num+1)]
     leaf_set = make_leafset(node_num)
-    #print(leaf_set)
     tree[1].parent = 0
     queue = deque()
     queue.appendleft(1)

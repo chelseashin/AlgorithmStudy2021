@@ -76,10 +76,10 @@ def bfs(start, end, N, start_pieces):
                 #print("append queue", queue[-1])
 
         # 말을 바꾸지 않고 진행하는 경우
-        for i, j in MOVE[chess_info.piece]:
-            for alpha in range(N):
-                nr = chess_info.loc[0] + i * alpha
-                nc = chess_info.loc[1] + j * alpha
+        if chess_info.piece == 0:
+             for i, j in MOVE[chess_info.piece]:
+                nr = chess_info.loc[0] + i
+                nc = chess_info.loc[1] + j
                 if is_in_range(nr, nc, N):
                     if (nr, nc) not in visited[chess_info.piece]:
                         visited[chess_info.piece].add((nr, nc))
@@ -90,20 +90,35 @@ def bfs(start, end, N, start_pieces):
                             chess_info.count + 1
                         ))
                         #print("append queue", queue[-1])
+        else:
+            for i, j in MOVE[chess_info.piece]:
+                for alpha in range(N):
+                    nr = chess_info.loc[0] + i * alpha
+                    nc = chess_info.loc[1] + j * alpha
+                    if is_in_range(nr, nc, N):
+                        if (nr, nc) not in visited[chess_info.piece]:
+                            visited[chess_info.piece].add((nr, nc))
+                            queue.append(ChessInfo(
+                                chess_info.start_piece,
+                                chess_info.piece,
+                                (nr, nc),
+                                chess_info.count + 1
+                            ))
+                            #print("append queue", queue[-1])
     return 0, 0
 
 
 def game(N, num_loc):
-    print(num_loc)
+    #print(num_loc)
     result = 0
     end_pieces = []
     for i in range(1, N*N):
         start = num_loc[i]
         end = num_loc[i+1]
-        print("from:", i, start, "to:", i+1, end)
+        #print("from:", i, start, "to:", i+1, end)
         end_pieces, bfs_result = bfs(start, end, N, end_pieces)
         result += bfs_result
-        print("result:", result)
+        #print("result:", result)
     return result
 
 

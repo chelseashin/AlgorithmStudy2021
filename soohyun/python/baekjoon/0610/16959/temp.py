@@ -7,20 +7,27 @@ MOVE = {0: [(-2, -1), (-2, 1), (2, -1), (2, 1), (1, 2), (-1, 2), (1, -2), (-1, -
 
 
 class ChessInfo():
-    def __init__(self, start_piece, piece, loc, count):
+    def __init__(self, start_piece, piece, loc, count, number):
         self.start_piece = start_piece
         self.piece = piece
         self.loc = loc
         self.count = count
+        self.number = number
 
     def __str__(self):
         return f'{self.start_piece}, {self.piece}, {self.loc}, {self.count}'
 
 
-def make_visit(num, start):
-    result = defaultdict(set)
+def make_visit(num, N, start):
+    result = dict()
     for i in range(num):
-        result[i].add(start)
+        location_dict = dict()
+        for j in range(1, N*N+1):
+            location_dict[j] = set()
+        result[i] = location_dict
+    result[0][2].add(start)
+    result[1][2].add(start)
+    result[2][2].add(start)
     return result
 
 
@@ -41,70 +48,102 @@ def get_arrive_queue(queue, end, count):
     return arr
 
 
-def bfs(start, end, N, start_pieces):
+def bfs(start, N, num_loc):
     count = 0
     queue = list()
-    visited = defaultdict(set)
+    visited = make_visit(3, N, start)
+    #print(visited)
 
-    if len(start_pieces) == 0:
-        visited = make_visit(3, start)
-        queue = [ChessInfo(i, i, start, count) for i in range(3)]
-    else:
-        for start_piece in start_pieces:
-            visited[start_piece].add(start)
-            queue.append(ChessInfo(start_piece, start_piece, start, count))
+    queue = [ChessInfo(i, i, start, count, 2) for i in range(3)]
     #for q in queue:
     #    print("prequeue:", q)
-
     while queue:
         chess_info = queue.pop(0)
-        #print("POPPED queue", chess_info)
-        if chess_info.loc == end:
-            arrive_queue = [chess_info.piece]
-            arrive_queue.extend(get_arrive_queue(queue, end, chess_info.count))
-            return arrive_queue, chess_info.count
+        #print(chess_info.number)
+        if chess_info.number == N*N+1:
+            return chess_info.count
+        next_destination = num_loc[chess_info.number]
 
         # 말을 바꾸는 경우
         for i in range(3):
             next_piece = (chess_info.piece + 1 + i) % 3
-            if chess_info.loc not in visited.get(next_piece, {}):
+            if chess_info.loc not in visited[next_piece][chess_info.number]:
                 queue.append(ChessInfo(
                                     chess_info.start_piece,
                                     next_piece,
                                     chess_info.loc,
-                                    chess_info.count + 1
+                                    chess_info.count + 1,
+                                    chess_info.number
                                 ))
-                visited[next_piece].add(chess_info.loc)
+                visited[next_piece][chess_info.number].add(chess_info.loc)
                 #print("change append queue", queue[-1])
 
         # 말을 바꾸지 않고 진행하는 경우
-        for i, j in MOVE[chess_info.piece]:
-            for alpha in range(N):
-                nr = chess_info.loc[0] + i * alpha
-                nc = chess_info.loc[1] + j * alpha
+        
+        if chess_info.piece == 0:
+            for i, j in MOVE[chess_info.piece]:
+                nr = chess_info.loc[0] + i
+                nc = chess_info.loc[1] + j
                 if is_in_range(nr, nc, N):
-                    if (nr, nc) not in visited[chess_info.piece]:
-                        visited[chess_info.piece].add((nr, nc))
-                        queue.append(ChessInfo(
-                            chess_info.start_piece,
-                            chess_info.piece,
-                            (nr, nc),
-                            chess_info.count + 1
-                        ))
-                        #print("nonchange append queue", queue[-1])
-    return 0, 0
+                    if (nr, nc) not in visited[chess_info.piece][chess_info.number]:
+                        visited[chess_info.piece][chess_info.number].add((nr, nc))
+                        if nr == next_destination[0] and nc == next_destination[1]:
+                            #print("correct")
+                            queue.append(ChessInfo(
+                                chess_info.start_piece,
+                                chess_info.piece,
+                                (nr, nc),
+                                chess_info.count + 1,
+                                chess_info.number + 1
+                            ))
+                        else:
+                            queue.append(ChessInfo(
+                                chess_info.start_piece,
+                                chess_info.piece,
+                                (nr, nc),
+                                chess_info.count + 1,
+                                chess_info.number
+                            ))
+        else: 
+            for i, j in MOVE[chess_info.piece]:   
+                for alpha in range(N):
+                    nr = chess_info.loc[0] + i * alpha
+                    nc = chess_info.loc[1] + j * alpha
+                    if is_in_range(nr, nc, N):
+                        if (nr, nc) not in visited[chess_info.piece][chess_info.number]:
+                            visited[chess_info.piece][chess_info.number].add((nr, nc))
+                            if nr == next_destination[0] and nc == next_destination[1]:
+                                #print("correct")
+                                queue.append(ChessInfo(
+                                    chess_info.start_piece,
+                                    chess_info.piece,
+                                    (nr, nc),
+                                    chess_info.count + 1,
+                                    chess_info.number + 1
+                                ))
+                            else:
+                                queue.append(ChessInfo(
+                                    chess_info.start_piece,
+                                    chess_info.piece,
+                                    (nr, nc),
+                                    chess_info.count + 1,
+                                    chess_info.number
+                                ))
+                                #print("nonchange append queue", queue[-1])
+                        
+    return 0
 
 
 def game(N, num_loc):
     result = 0
-    end_pieces = []
-    for i in range(1, N*N):
-        start = num_loc[i]
-        end = num_loc[i+1]
-        #print("from:", i, start, "to:", i+1, end, "end_pieces", end_pieces)
-        end_pieces, bfs_result = bfs(start, end, N, end_pieces)
-        result += bfs_result
-        #print("bfs_result:",bfs_result,"result:", result)
+    result = bfs(num_loc[1], N, num_loc)
+    #for i in range(1, N*N):
+    #    start = num_loc[i]
+    #    end = num_loc[i+1]
+    #    #print("from:", i, start, "to:", i+1, end, "end_pieces", end_pieces)
+    #    end_pieces, bfs_result = bfs(start, end, N, end_pieces)
+    #    result += bfs_result
+    #    #print("bfs_result:",bfs_result,"result:", result)
     return result
 
 

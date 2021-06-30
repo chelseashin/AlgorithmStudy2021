@@ -12,11 +12,6 @@ class PersonLoc():
         return f"loc: {self.loc}  count: {self.count} lbc: {self.left_broken_chance}"
 
 
-def make_visited(broken_chance):
-    dic = dict()
-    for i in range(0, broken_chance+1):
-        dic[i] = set()
-    return dic
 
 
 def bfs(maze, width, height, broken_chance):
