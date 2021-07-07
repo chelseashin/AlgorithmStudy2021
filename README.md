@@ -295,6 +295,16 @@
    4. 트리 https://www.acmicpc.net/problem/1068
    5. 로봇 청소기 https://www.acmicpc.net/problem/14503
    6. 독특한 계산기 https://www.acmicpc.net/problem/19591
+
+##### :ballot_box_with_check: 27주차 문제 리스트(21-07-07)
+
+   1. 단어 맞추기 https://www.acmicpc.net/problem/9081
+   2. 사전 https://www.acmicpc.net/problem/1256
+   3. 단어 수학 https://www.acmicpc.net/problem/1339
+   4. 행렬 제곱 https://www.acmicpc.net/problem/10830
+   5. 뿌요뿌요 https://www.acmicpc.net/problem/11559
+   6. 트리와 쿼리 https://www.acmicpc.net/problem/15681
+
 ------
 조금만 더 힘냅시다, Keep Going!:smile:
 
