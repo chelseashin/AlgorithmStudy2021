@@ -22,6 +22,7 @@ def calc(A, Z, C, K):
     data = []
     if A > 0:
         for _ in range(1, A+Z+1):
+            print(f"N:{N}, R:{R}, K: {K}")
             if R <= 0 or N == R:
                 continue
             if C[N-1][R-1] >= K:

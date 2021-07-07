@@ -14,7 +14,7 @@ def next_permutation(words):
             is_change = True
             break
         last_num = number[i]
-
+    print(number[change_idx])
     if is_change:
         compare_idx = 0
         # find min diff
@@ -24,9 +24,11 @@ def next_permutation(words):
             if diff > 0 and diff < min_diff:
                 compare_idx = i
                 min_diff = diff
+        print(number[compare_idx])
         # swap
         number[change_idx], number[compare_idx] = \
             number[compare_idx], number[change_idx]
+        print(number)
         # reverse substring
         number[change_idx+1:len(number)] =\
                         number[change_idx+1:len(number)][::-1]
