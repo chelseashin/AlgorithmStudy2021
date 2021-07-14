@@ -314,6 +314,14 @@
    5. 세 용액 https://www.acmicpc.net/problem/2473
    6. 박스 채우기 https://www.acmicpc.net/problem/1493
 
+##### :ballot_box_with_check: 29주차 문제 리스트(21-07-21)
+   1. 경사로: https://www.acmicpc.net/problem/14890
+   2. 불켜기: https://www.acmicpc.net/problem/11967
+   3. 동물원: https://www.acmicpc.net/problem/12907
+   4. 샤워실바닥깔기: https://www.acmicpc.net/problem/14600
+   5. 로봇프로젝트: https://www.acmicpc.net/problem/3649
+   6. 가장먼 노드: https://programmers.co.kr/learn/courses/30/lessons/49189
+
 
 ------
 조금만 더 힘냅시다, Keep Going!:smile:
