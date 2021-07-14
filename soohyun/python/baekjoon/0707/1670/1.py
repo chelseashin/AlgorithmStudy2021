@@ -5,24 +5,10 @@ def dfs(N):
             print(start, end)
             return 1
         else:
-            for nstart in range(start+1, N):
-                for nend in range(nstart+1, N):
-                    if nend - nstart > 0 and (nend - nstart) % 2 !=0:
-                        if (start == -1 and end == -1) or (nend < end and nstart > start) or (nend < end and nstart < start):
-                            print("before",visited)
-                            if not visited[nstart] and not visited[nend]:
-                                visited[nstart] = True
-                                left_visited -= 1
-                                visited[nend] = True
-                                left_visited -= 1
-                                print("going", nstart, nend)
-                                result += recursive(visited, nstart, nend, left_visited)
-                                print("after", visited)
-                                visited[nstart] = False
-                                left_visited += 1
-                                visited[nend] = False
-                                left_visited += 1
-                                print("result", visited)
+            for nend in range(start+1, end, 2):
+                for nstart in range(start+1, N):
+                    recursive()
+
             return result
     return recursive
 
