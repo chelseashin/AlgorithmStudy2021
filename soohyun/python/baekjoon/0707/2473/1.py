@@ -11,7 +11,6 @@ def find_min(idx, liquid, N):
 
     while start < end:
         lsum = s_value + liquid[start] + liquid[end]
-        #print("value", lsum, start, end)
         if min_sum > abs(lsum):
             min_sum = abs(lsum)
             min_value[0] = liquid[idx]
