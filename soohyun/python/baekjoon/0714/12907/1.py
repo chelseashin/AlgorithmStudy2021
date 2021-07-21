@@ -19,7 +19,6 @@ def main():
     
     prev_value = -1
     count_two, count_one = 0, 0 
-    #print(data)
     for value in data:
         if value == 0:
             break

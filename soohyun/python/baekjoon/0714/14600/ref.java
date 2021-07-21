@@ -1,3 +1,5 @@
+//참조: https://rebro.kr/64
+//참조: https://hsdevelopment.tistory.com/508
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
