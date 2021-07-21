@@ -322,6 +322,15 @@
    5. 로봇프로젝트: https://www.acmicpc.net/problem/3649
    6. 가장먼 노드: https://programmers.co.kr/learn/courses/30/lessons/49189
 
+##### :ballot_box_with_check: 30주차 문제 리스트(21-07-28)
+   1. 연구소3: https://www.acmicpc.net/problem/17142
+   2. 원판돌리기: https://www.acmicpc.net/problem/17822
+   3. 괄호: https://www.acmicpc.net/problem/10422
+   4. 우수마을: https://www.acmicpc.net/problem/1949
+   5. 알파벳: https://www.acmicpc.net/problem/1987
+   6. 트리: https://www.acmicpc.net/problem/4256
+
+
 
 ------
 조금만 더 힘냅시다, Keep Going!:smile:
